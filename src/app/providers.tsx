@@ -1,13 +1,13 @@
 "use client";
 
-import theme from "@/theme";
-import { CacheProvider } from "@chakra-ui/next-js";
-import { ChakraProvider } from "@chakra-ui/react";
+import React from "react";
+import AOS from "aos";
 
 export function Providers({ children }: { children: React.ReactNode }) {
-  return (
-    <CacheProvider>
-      <ChakraProvider theme={theme}>{children}</ChakraProvider>
-    </CacheProvider>
-  );
+  React.useEffect(() => {
+    AOS.init({
+      once: true,
+    });
+  }, []);
+  return <React.Fragment>{children}</React.Fragment>;
 }

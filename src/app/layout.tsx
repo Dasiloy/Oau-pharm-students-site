@@ -1,5 +1,7 @@
 import "normalize.css";
 import "./globals.css";
+import "aos/dist/aos.css";
+
 import React from "react";
 import type { Metadata } from "next";
 import { Mulish } from "next/font/google";
