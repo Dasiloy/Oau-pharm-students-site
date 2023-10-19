@@ -1,17 +1,30 @@
 import React from "react";
-
+import Hero from './Homepage/Hero'
+import AboutUs from './Homepage/AboutUs'
+import ThingsWeDo from './Homepage/ThingsWeDo'
+import AcademicResources from './Homepage/AcademicResources'
+import OurProject from './Homepage/OurProject'
+import OurArticles from './Homepage/OurArticles'
+import MeetOurAlumni from './Homepage/MeetOurAlumni'
+import Ourpathners from './Homepage/Ourpathners'
+import BOOK from './Homepage/BOOK'
+import SupportUs from './Homepage/SupportUs'
 export default function Home() {
+  //represent the homepage route.. default rendered as server side component//
+                                                                                                                                                                                                                                                                                                                                         
   return (
-    <main className='p-24'>
-      <div
-        data-aos='fade-up'
-        data-aos-duration='3000'
-        className='bg-red-500 w-20 h-20 mb-5'>
-        hello there
-      </div>
-      <button className='bg-red-500 text-white px-6 py-6'>
-        hello from button
-      </button>
+    <main>
+      <Hero/>
+      <AboutUs />
+      <ThingsWeDo />
+      <AcademicResources />
+      <OurProject />
+      <OurArticles />
+      <MeetOurAlumni />
+      <Ourpathners />
+      <BOOK />
+      <SupportUs />
+      <div>Home page</div>
     </main>
   );
 }
