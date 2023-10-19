@@ -9,7 +9,7 @@ import MeetOurAlumni from './Homepage/MeetOurAlumni';
 import Ourpathners from './Homepage/Ourpathners';
 import BOOK from './Homepage/BOOK';
 import SupportUs from './Homepage/SupportUs';
-import Navlinks from './components/navBar/navlinks';
+
 export default function Home() {
   //represent the homepage route.. default rendered as server side component//
 
