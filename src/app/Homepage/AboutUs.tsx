@@ -1,25 +1,37 @@
 import React from "react";
 import Button from "../components/button/button";
 import Image from "next/image";
-const AboutUsComponent = ({ image, content }) => {
-  const text = "Read more";
-  const displayProperties = "bg-fuchsia-900 text-white mt-12";
+interface Aboutus {
+  image: string;
+  content: string;
+}
+const AboutUsComponent: React.FC<Aboutus> = ({ image, content }) => {
+  const text = 'Read more';
+  const displayProperties = 'bg-fuchsia-900 text-white mt-12';
   return (
-    <div className="grid grid-cols-1 gap-5 lg:gap-0 gap-y-5 md:grid-cols-2 w-10/12 md:w-9/12 m-auto">
+    <div className='grid grid-cols-1 gap-10  gap-y-5 md:grid-cols-2 w-10/12 lg:9/12 md:w-9/12 m-auto'>
       <div>
-        <Image width={650} height={800} alt="" src={image} />
+        <Image
+          width={650}
+          height={800}
+          alt=''
+          src={image}
+        />
       </div>
       <div>
         <div>
-          <h1 className="text-2xl text-orange font-bold">
+          <h1 className='text-2xl text-orange font-bold'>
             I why are we called pharmaco?
           </h1>
-          <h1 className=" text-4xl font-bold mt-3">About Us</h1>
+          <h1 className=' text-4xl font-bold mt-3'>About Us</h1>
         </div>
-        <div className="md:text-xl text-lg mt-5 leading-3 md:leading-4">
+        <div className='md:text-xl text-lg mt-5 leading-3 md:leading-4'>
           {content}
         </div>
-        <Button text={text} displayProperties={displayProperties} />
+        <Button
+          text={text}
+          displayProperties={displayProperties}
+        />
       </div>
     </div>
   );

@@ -1,6 +1,15 @@
 import React from "react";
 import Image from "next/image";
-function OurArticlesCard({ image, headings, body, avatar, name }) {
+interface AboutComponent {
+  image:string,
+  headings:string,
+  body:string,
+  avatar:string,
+  name:string
+
+}
+const OurArticlesCard : React.FC<AboutComponent>= ( { image, headings, body, avatar, name } ) => {
+
   return (
     <div className=" w-96">
       <div className=" flex">

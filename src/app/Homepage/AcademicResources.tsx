@@ -1,5 +1,6 @@
 import React from "react";
 import Button from "../components/button/button";
+
 function AcademicResources() {
   const text = "View more";
   const displayProperties = "bg-white text-fuchsia-900";

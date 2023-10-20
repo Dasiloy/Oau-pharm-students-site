@@ -19,8 +19,11 @@ function ThingsWeDo() {
           </p>
         </div>
       </div>
-      <div className="flex justify-center mt-10">
+      <div className="md:flex hidden justify-center mt-10 ">
         <Image src="/ThingsWeDo.svg" alt="pict" width={1000} height={1000} />
+      </div>
+      <div className="flex md:hidden justify-center mt-5 ">
+        <Image src="/ACTIVITES.svg" alt="pict" width={1000} height={1000} />
       </div>
     </div>
   );

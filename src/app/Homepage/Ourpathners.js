@@ -16,7 +16,7 @@ function Ourpathners() {
     backgroundPosition: "center",
   };
   return (
-    <div style={backgroundImage} className="mt-32 bg-slate-600">
+    <div style={backgroundImage} className="md:mt-32 mt-10 bg-slate-600">
       <div className="pt-10">
         <HeaderSection
           FirstHeading={FirstHeading}
