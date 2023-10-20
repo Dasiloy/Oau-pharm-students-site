@@ -1,7 +1,7 @@
 export const links = [
     {
       name: "About Us",
-      route:"about-us",
+  
       submenu: true,
       sublinks:[
         {
@@ -16,7 +16,7 @@ export const links = [
     },
     {
       name: "Activities",
-      route: "activities",
+
       submenu: true,
       sublinks:[
         {
@@ -31,27 +31,9 @@ export const links = [
         },
       ],
     },
-
-    {
-      name: "Articles",
-      route : "articles",
-      submenu: true,
-      sublinks:[
-        {
-          Head: "articles",
-          sublink: [
-            { name: "PANS National", link: "/" },
-            { name: "Pans Week", link: "/" },
-            { name: "Pans Politics", link: "/" },
-            { name: "Social Events", link: "/" },
-            { name: "Event Varities", link: "/" },
-          ],
-        },
-      ],
-    },
     {
       name: "Projects",
-      route: "projects",
+
       submenu: true,
       sublinks:[
         {

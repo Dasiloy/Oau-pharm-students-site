@@ -36,7 +36,7 @@ const route = useRouter()
     <div onClick={() => viewed("home")} className='flex items-center gap-3 justify-center cursor-pointer'>
     <h1
             onClick={() => setOpen("home")}>
-<a onClick={() => route.push("/home")}   className={open === "home" ? " text-md font-normal flex items-center gap-3 justify-center text-primary-500 underline underline-offset-8" : "font-normal text-md gap-3 flex items-center justify-center text-dark-dark-100"} >
+<a onClick={() => route.push("/home")}  className={open === "home" ? " text-md font-normal flex items-center gap-3 justify-center text-primary-500 underline underline-offset-8" : "font-normal text-md gap-3 flex items-center justify-center text-dark-dark-100"} >
               Home
 </a>
               </h1>
@@ -44,15 +44,13 @@ const route = useRouter()
       {links.map((link) => (
         <div>
           <div className="px-3  md:cursor-pointer group">
-            <div   className='flex items-center gap-3'>
+            <div onClick={() => viewed(link.name)} className={open === link.name ? " text-md font-normal flex items-center gap-3 justify-center text-primary-500 underline underline-offset-8" : "font-normal text-md gap-3 flex items-center justify-center text-dark-dark-100"} >
             <h1
             onClick={() => setOpen(link.name)}>
-<a onClick={() => route.push(link.route)}   className={open === link.name ? " text-md font-normal flex items-center gap-3 justify-center text-primary-500 underline underline-offset-8" : "font-normal text-md gap-3 flex items-center justify-center text-dark-dark-100"} >
               {link.name}
-</a>
               </h1>
+{ link.submenu == true ?
               <span
-onClick={() => viewed(link.name)}
               className="">
                       {
                         view === link.name
@@ -60,7 +58,8 @@ onClick={() => viewed(link.name)}
                             : <AiFillCaretDown className="text-[15px]"/>
                           }
                     </span>
-
+:
+""              }
 
 </div>
             {link.submenu && (
@@ -68,7 +67,7 @@ onClick={() => viewed(link.name)}
                 {
                 <div className={view ===link.name ?"absolute mt-[1.5rem] " : "hidden"}>
                   <div className="flex flex-row bg-white ">
-                    {link.sublinks.map((mysublinks) => (
+                    {link.sublinks && link.sublinks.map((mysublinks) => (
                       <div className='flex flex-col gap-4 p-6'>
                         {mysublinks.sublink.map((slink) => (
                           <li className="">
@@ -90,12 +89,14 @@ onClick={() => viewed(link.name)}
           </div>
         </div>
       ))}
-      <div onClick={() => viewed("support")} className='flex items-center gap-3 justify-center cursor-pointer'>
-    <h1
-            onClick={() => setOpen("support")}>
-<a onClick={() => route.push("/support")}   className={open === "support" ? " text-md font-normal flex items-center gap-3 justify-center text-primary-500 underline underline-offset-8" : "font-normal text-md gap-3 flex items-center justify-center text-dark-dark-100"} >
+      <div onClick={() => viewed("articles")} className='flex items-center gap-3 justify-center cursor-pointer'>
+    <h1 className={view === "articles" ? " text-md font-normal flex items-center gap-3 justify-center text-primary-500 underline underline-offset-8" : "font-normal text-md gap-3 flex items-center justify-center text-dark-dark-100"} >
+              Articles
+              </h1>
+          </div>
+          <div onClick={() => viewed("support")} className='flex items-center gap-3 justify-center cursor-pointer'>
+    <h1 className={view === "support" ? " text-md font-normal flex items-center gap-3 justify-center text-primary-500 underline underline-offset-8" : "font-normal text-md gap-3 flex items-center justify-center text-dark-dark-100"} >
               Support Us
-</a>
               </h1>
           </div>
       </div>
