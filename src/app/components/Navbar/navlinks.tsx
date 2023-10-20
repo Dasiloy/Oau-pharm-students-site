@@ -32,16 +32,16 @@ const route = useRouter()
         <img src='/assests/oau-logo.png' alt='oau' />
         <img src='/assests/pans-logo.png' alt='pans' />
       </div>
-    <div className="md:flex hidden uppercase items-center justify-center gap-8 p-8 " >
+    <div className="md:flex hidden  items-center justify-center gap-8 p-8 " >
     <div onClick={() => setview("home")} className='flex items-center gap-3 justify-center cursor-pointer'>
-    <h1 className={view === "home" ? " text-md font-normal flex items-center gap-3 justify-center text-primary-500 underline underline-offset-8" : "font-normal text-md gap-3 flex items-center justify-center text-dark-dark-100"} >
+    <h1 className={view === "home" ? " text-[16px] font-normal flex items-center gap-3 justify-center text-primary-500 underline underline-offset-8" : "font-normal text-[16px] gap-3 flex items-center justify-center text-dark-dark-100"} >
               Home
               </h1>
           </div>
       {links.map((link) => (
         <div>
           <div className="px-3  md:cursor-pointer group">
-            <div onClick={() => viewed(link.name)} className={open === link.name ? " text-md font-normal flex items-center gap-3 justify-center text-primary-500 underline underline-offset-8" : "font-normal text-md gap-3 flex items-center justify-center text-dark-dark-100"} >
+            <div onClick={() => viewed(link.name)} className={view === link.name ? "  font-normal text-[16px] flex items-center gap-3 justify-center text-primary-500 underline underline-offset-8" : "font-normal text-[16px] gap-3 flex items-center justify-center text-dark-dark-100"} >
             <h1
             onClick={() => setOpen(link.name)}>
               {link.name}
@@ -67,7 +67,7 @@ const route = useRouter()
                     {link.sublinks && link.sublinks.map((mysublinks) => (
                       <div className='flex flex-col gap-4 p-6'>
                         {mysublinks.sublink.map((slink) => (
-                          <li className="">
+                          <li onClick={() =>route.push(slink.link)} className="">
                             <a
                             onClick={() => setactive(slink.name)}
                               className={active===slink.name ? "text-md text-primary-500  font-normal" : "text-dark-dark-100 hover:text-primary-500"}
@@ -87,12 +87,12 @@ const route = useRouter()
         </div>
       ))}
       <div onClick={() => setview("articles")} className='flex items-center gap-3 justify-center cursor-pointer'>
-    <h1 onClick={() => route.push("/articles")} className={view === "articles" ? " text-md font-normal flex items-center gap-3 justify-center text-primary-500 underline underline-offset-8" : "font-normal text-md gap-3 flex items-center justify-center text-dark-dark-100"} >
+    <h1 onClick={() => route.push("/articles")} className={view === "articles" ? " text-[16px] font-normal flex items-center gap-3 justify-center text-primary-500 underline underline-offset-8" : "font-normal text-[16px] gap-3 flex items-center justify-center text-dark-dark-100"} >
               Articles
               </h1>
           </div>
           <div onClick={() => setview("support")} className='flex items-center gap-3 justify-center cursor-pointer'>
-    <h1 className={view === "support" ? " text-md font-normal flex items-center gap-3 justify-center text-primary-500 underline underline-offset-8" : "font-normal text-md gap-3 flex items-center justify-center text-dark-dark-100"} >
+    <h1 className={view === "support" ? " text-[16px] font-normal flex items-center gap-3 justify-center text-primary-500 underline underline-offset-8" : "font-normal text-[16px] gap-3 flex items-center justify-center text-dark-dark-100"} >
               Support Us
               </h1>
           </div>

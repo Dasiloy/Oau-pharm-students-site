@@ -1,15 +1,15 @@
 export const links = [
     {
       name: "About Us",
-  
+
       submenu: true,
       sublinks:[
         {
           Head: "about us",
           sublink: [
-            { name: "PANS OAU Structure", link: "/" },
-            { name: "Leadership", link: "/" },
-            { name: "Lecturers/Advisers", link: "/" },
+            { name: "PANS OAU Structure", link: "/About-us/Structure" },
+            { name: "Leadership", link:  "/About-us/Leadership"},
+            { name: "Lecturers/Advisers", link:  "/About-us/advisers" },
           ],
         },
       ],
@@ -39,9 +39,9 @@ export const links = [
         {
           Head: "projects",
           sublink: [
-            { name: "PANSITE Project", link: "/" },
-            { name: "Feed A pansite", link: "/" },
-            { name: "Suggestion Box", link: "/" },
+            { name: "PANSITE Project", link: "/projects/Pansproject" },
+            { name: "Feed A pansite", link: "/projects/Feedapansite" },
+            { name: "Suggestion Box", link: "/projects/Suggestions"},
           ],
         },
       ]
