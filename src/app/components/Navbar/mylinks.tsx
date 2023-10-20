@@ -1,6 +1,7 @@
 export const links = [
     {
       name: "About Us",
+      route:"about-us",
       submenu: true,
       sublinks:[
         {
@@ -15,6 +16,7 @@ export const links = [
     },
     {
       name: "Activities",
+      route: "activities",
       submenu: true,
       sublinks:[
         {
@@ -32,6 +34,7 @@ export const links = [
 
     {
       name: "Articles",
+      route : "articles",
       submenu: true,
       sublinks:[
         {
@@ -48,6 +51,7 @@ export const links = [
     },
     {
       name: "Projects",
+      route: "projects",
       submenu: true,
       sublinks:[
         {

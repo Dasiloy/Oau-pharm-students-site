@@ -3,58 +3,65 @@ import React,{useState} from 'react'
 import { links } from './mylinks';
 import {AiFillCaretDown} from "react-icons/ai"
 import {BiSolidUpArrow} from "react-icons/bi"
+import { useRouter } from 'next/navigation';
 
 const Navlinks = () => {
   const [heading, setHeading] = useState("");
   const [subHeading, setSubHeading] = useState("");
   const [view, setview] = useState("");
   const [active, setactive] = useState("");
-
+  const [open, setOpen] = useState("");
 function viewed(val:string) {
 setview(val)
 if(val ===view){
 setview("")
 }
 }
+function icon(value:string) {
+setHeading(value)
+if(value === heading){
+setHeading("")
+}
+}
+const route = useRouter()
   return (
     <>
-    <div className=' flex items-center justify-around'>
+    <div>
+    <div className='hidden lg:flex items-center justify-around'>
       <div className='flex items-center justify-center gap-3'>
         <img src='/assests/oau-logo.png' alt='oau' />
         <img src='/assests/pans-logo.png' alt='pans' />
       </div>
     <div className="md:flex hidden uppercase items-center justify-center gap-8 p-8 " >
     <div onClick={() => viewed("home")} className='flex items-center gap-3 justify-center cursor-pointer'>
-            <a     className={view === "home" ? " text-md font-normal flex text-primary-500 underline underline-offset-8" : "font-normal text-md flex text-dark-dark-100"}>
+    <h1
+            onClick={() => setOpen("home")}>
+<a onClick={() => route.push("/home")}   className={open === "home" ? " text-md font-normal flex items-center gap-3 justify-center text-primary-500 underline underline-offset-8" : "font-normal text-md gap-3 flex items-center justify-center text-dark-dark-100"} >
               Home
-            </a>
-            {
-                        view === "home"
-                            ? <BiSolidUpArrow className="text-[15px]  text-primary-500" />
-                            : <AiFillCaretDown className="text-[15px]"/>
-                          }
+</a>
+              </h1>
           </div>
       {links.map((link) => (
         <div>
           <div className="px-3  md:cursor-pointer group">
-            <div onClick={() => viewed(link.name)}>
+            <div   className='flex items-center gap-3'>
             <h1
-              className={view === link.name ? " text-md font-normal flex items-center gap-3 justify-center text-primary-500 underline underline-offset-8" : "font-normal text-md gap-3 flex items-center justify-center text-dark-dark-100"}
-              onClick={() => {
-                heading !== link.name ? setHeading(link.name) : setHeading("");
-                setSubHeading("");
-              }}
-            >
+            onClick={() => setOpen(link.name)}>
+<a onClick={() => route.push(link.route)}   className={open === link.name ? " text-md font-normal flex items-center gap-3 justify-center text-primary-500 underline underline-offset-8" : "font-normal text-md gap-3 flex items-center justify-center text-dark-dark-100"} >
               {link.name}
-              <span className="">
+</a>
+              </h1>
+              <span
+onClick={() => viewed(link.name)}
+              className="">
                       {
-                        heading === link.name
-                            ? <BiSolidUpArrow className="text-[15px]" />
+                        view === link.name
+                            ? <BiSolidUpArrow className="text-[15px]  text-primary-500" />
                             : <AiFillCaretDown className="text-[15px]"/>
                           }
                     </span>
 
-            </h1>
+
 </div>
             {link.submenu && (
               <div>
@@ -84,16 +91,16 @@ setview("")
         </div>
       ))}
       <div onClick={() => viewed("support")} className='flex items-center gap-3 justify-center cursor-pointer'>
-            <a     className={view === "support" ? " text-md font-normal flex text-primary-500 underline underline-offset-8" : "font-normal text-md flex text-dark-dark-100"}>
+    <h1
+            onClick={() => setOpen("support")}>
+<a onClick={() => route.push("/support")}   className={open === "support" ? " text-md font-normal flex items-center gap-3 justify-center text-primary-500 underline underline-offset-8" : "font-normal text-md gap-3 flex items-center justify-center text-dark-dark-100"} >
               Support Us
-            </a>
-            {
-                        view === "support"
-                            ? <BiSolidUpArrow className="text-[15px]  text-primary-500" />
-                            : <AiFillCaretDown className="text-[15px]"/>
-                          }
+</a>
+              </h1>
           </div>
       </div>
+      </div>
+
       </div>
     </>
   );
