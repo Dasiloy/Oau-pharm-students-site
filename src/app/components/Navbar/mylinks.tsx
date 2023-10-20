@@ -6,7 +6,7 @@ export const links = [
         {
           Head: "about us",
           sublink: [
-            { name: "PANS OAU Structure", link: "/" },
+            { name: "PANS OAU Structure", link: "/about" },
             { name: "Leadership", link: "/" },
             { name: "Lecturers/Advisers", link: "/" },
           ],

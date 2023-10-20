@@ -25,7 +25,6 @@ export default function Home() {
       <Ourpathners />
       <BOOK />
       <SupportUs />
-      <div>Home page</div>
     </main>
   );
 }
