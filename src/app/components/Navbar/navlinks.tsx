@@ -33,12 +33,9 @@ const route = useRouter()
         <img src='/assests/pans-logo.png' alt='pans' />
       </div>
     <div className="md:flex hidden uppercase items-center justify-center gap-8 p-8 " >
-    <div onClick={() => viewed("home")} className='flex items-center gap-3 justify-center cursor-pointer'>
-    <h1
-            onClick={() => setOpen("home")}>
-<a onClick={() => route.push("/home")}  className={open === "home" ? " text-md font-normal flex items-center gap-3 justify-center text-primary-500 underline underline-offset-8" : "font-normal text-md gap-3 flex items-center justify-center text-dark-dark-100"} >
+    <div onClick={() => setview("home")} className='flex items-center gap-3 justify-center cursor-pointer'>
+    <h1 className={view === "home" ? " text-md font-normal flex items-center gap-3 justify-center text-primary-500 underline underline-offset-8" : "font-normal text-md gap-3 flex items-center justify-center text-dark-dark-100"} >
               Home
-</a>
               </h1>
           </div>
       {links.map((link) => (
@@ -89,12 +86,12 @@ const route = useRouter()
           </div>
         </div>
       ))}
-      <div onClick={() => viewed("articles")} className='flex items-center gap-3 justify-center cursor-pointer'>
-    <h1 className={view === "articles" ? " text-md font-normal flex items-center gap-3 justify-center text-primary-500 underline underline-offset-8" : "font-normal text-md gap-3 flex items-center justify-center text-dark-dark-100"} >
+      <div onClick={() => setview("articles")} className='flex items-center gap-3 justify-center cursor-pointer'>
+    <h1 onClick={() => route.push("/articles")} className={view === "articles" ? " text-md font-normal flex items-center gap-3 justify-center text-primary-500 underline underline-offset-8" : "font-normal text-md gap-3 flex items-center justify-center text-dark-dark-100"} >
               Articles
               </h1>
           </div>
-          <div onClick={() => viewed("support")} className='flex items-center gap-3 justify-center cursor-pointer'>
+          <div onClick={() => setview("support")} className='flex items-center gap-3 justify-center cursor-pointer'>
     <h1 className={view === "support" ? " text-md font-normal flex items-center gap-3 justify-center text-primary-500 underline underline-offset-8" : "font-normal text-md gap-3 flex items-center justify-center text-dark-dark-100"} >
               Support Us
               </h1>
