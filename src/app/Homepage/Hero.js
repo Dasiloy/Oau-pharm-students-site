@@ -20,7 +20,7 @@ function Hero() {
         back
     }*/
   return (
-    <div className="backgroundPict relative">
+    <div className=" ">
       <div className="">
         <div
           style={backgroundImageStyle}
@@ -37,8 +37,8 @@ function Hero() {
             </div>
           </div>
 
-          <div className="presidentPosition md: bottom-0 w-11/12 m-auto md:m-px md:w-fit ">
-            <div className="relative w-fit">
+          <div className=" md:bottom-0 w-11/12 m-auto md:m-px md:w-fit ">
+            <div className=" w-fit">
               <Image width={500} height={500} alt="" src="/president.png" />
               <div className="absolute bottom-0 left-7">
                 <div className="p-3 border border-black bg-white rounded-t-lg">
