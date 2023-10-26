@@ -8,6 +8,7 @@ import { Mulish } from 'next/font/google';
 import { Providers } from './providers';
 import Navlinks from './components/navBar/navlinks'
 import Footer from './components/footer/footer';
+import BOOK from './Homepage/BOOK';
 const inter = Mulish({ subsets: ['latin'] });
 //anything placed here stay consistent throughout the whole application//
 export const metadata: Metadata = {
@@ -20,12 +21,18 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+    const backgroundImageStyle = {
+      backgroundImage: 'url(/WholeBackground.png)',
+      backgroundSize: 'cover',
+      backgroundPosition: 'center',
+      // Set the height you want
+    };
   return (
     <html lang='en'>
-      <body className={inter.className}>
+      <body style={backgroundImageStyle} className={inter.className}>
         <Navlinks />
         <Providers>{children}</Providers>
-
+        <BOOK />
         <Footer />
       </body>
     </html>

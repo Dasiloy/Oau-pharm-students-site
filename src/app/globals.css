@@ -21,3 +21,6 @@
 .ourProject {
   height: 600px;
 }
+.cardBackground {
+  background-color: rgba(105, 105, 105, 0.834);
+}

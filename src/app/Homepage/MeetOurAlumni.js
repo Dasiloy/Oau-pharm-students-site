@@ -1,7 +1,10 @@
+"use client";
 import React from "react";
 import Button from "../components/button/button";
 import HeaderSection from "../components/HeaderSection/HeaderSection";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
+
 function MeetOurAlumni() {
   const text = "Read more";
   const displayProperties = "bg-white text-fuchsia-800";
@@ -11,6 +14,8 @@ function MeetOurAlumni() {
     "PANS OAU make sure you can meet the old alumni. So, at PANS OAU, we\
             organize a variety of social events such as hangouts, movie nights,\
             parties, and other programs aimed at fostering social relationships.";
+
+  const route = useRouter();
   return (
     <div className="md:mt-32 mt-20">
       <HeaderSection
@@ -37,7 +42,10 @@ function MeetOurAlumni() {
               graduated in 1976. He had postgraduate training in Business and
               Organisational Management at thin New York USA.
             </p>
-            <div className="md:mt-14">
+            <div
+              onClick={() => route.push("/MeetAlumni")}
+              className="md:mt-14 flex"
+            >
               <Button text={text} displayProperties={displayProperties} />
             </div>
           </div>

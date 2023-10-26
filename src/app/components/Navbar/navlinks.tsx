@@ -33,7 +33,7 @@ const route = useRouter()
         <img src='/assests/pans-logo.png' alt='pans' />
       </div>
     <div className="md:flex hidden  items-center justify-center gap-8 p-8 " >
-    <div onClick={() => setview("home")} className='flex items-center gap-3 justify-center cursor-pointer'>
+    <div onClick={() => {route.push('/'); setview("home")}} className='flex items-center gap-3 justify-center cursor-pointer'>
     <h1 className={view === "home" ? " text-[16px] font-normal flex items-center gap-3 justify-center text-primary-500 underline underline-offset-8" : "font-normal text-[16px] gap-3 flex items-center justify-center text-dark-dark-100"} >
               Home
               </h1>
@@ -92,7 +92,7 @@ const route = useRouter()
               </h1>
           </div>
           <div onClick={() => setview("support")} className='flex items-center gap-3 justify-center cursor-pointer'>
-    <h1 className={view === "support" ? " text-[16px] font-normal flex items-center gap-3 justify-center text-primary-500 underline underline-offset-8" : "font-normal text-[16px] gap-3 flex items-center justify-center text-dark-dark-100"} >
+    <h1 onClick={()=>route.push('/SupportUs')} className={view === "support" ? " text-[16px] font-normal flex items-center gap-3 justify-center text-primary-500 underline underline-offset-8" : "font-normal text-[16px] gap-3 flex items-center justify-center text-dark-dark-100"} >
               Support Us
               </h1>
           </div>

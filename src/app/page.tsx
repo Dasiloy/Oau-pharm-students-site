@@ -7,7 +7,6 @@ import OurProject from './Homepage/OurProject';
 import OurArticles from './Homepage/OurArticles';
 import MeetOurAlumni from './Homepage/MeetOurAlumni';
 import Ourpathners from './Homepage/Ourpathners';
-import BOOK from './Homepage/BOOK';
 import SupportUs from './Homepage/SupportUs';
 import Image from 'next/image';
 export default function Home() {
@@ -28,7 +27,6 @@ export default function Home() {
       <OurArticles />
       <MeetOurAlumni />
       <Ourpathners />
-      <BOOK />
       <SupportUs />
     </main>
   );
