@@ -62,9 +62,9 @@ If you are in need of a helping hand, kindly fill the form below.
 <div className='bg-[url("/assests/rectangle30.png")]  flex   items-center justify-center'>
 <div className=' flex items-center justify-center w-[80%] py-[2rem] lg:py-[6rem]'>
   <div className=" gap-[1rem] lg:gap-0 flex flex-col lg:flex-row items-center justify-center ">
-<div className=' grid  gap-3 lg:flex flex-col    '>
-<h2 className='font-extrabold text-[20px] lg:text-[40px] text-white  ' >Do something great to help others</h2>
-<p className='text-white text-[14px] lg:text-[18px] font-normal  lg:items-center lg:justify-center w-[70%] ' >A program of this scale
+<div className='   gap-3 flex flex-col  lg:justify-center  '>
+<h2 className='font-extrabold text-[20px] lg:text-[40px] text-white   ' >Do something great to help others</h2>
+<p className='text-white text-[14px] lg:text-[18px] font-normal  lg:items-center lg:justify-center w-[100%] lg:w-[70%] ' >A program of this scale
 cannot be run by one person singlehandedly. For those interested in assisting PANSites and serving humanity,
  By lending a helping hand,
 Kindly <span className='text-[#ECBB55] items-center justify-center'>Contact Us </span></p>

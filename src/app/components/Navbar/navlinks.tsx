@@ -18,24 +18,26 @@ const Navlinks = () => {
 
 function viewed(val:string) {
 setview(val)
-if(val ===view){
+if(val === view){
 setview("")
 }
 }
-function icon(value:string) {
-setHeading(value)
-if(value === heading){
-setHeading("")
+async function navigate(val:string) {
+route.push(val),
+setnav(!nav)
 }
-}
+
+
+
+
 const route = useRouter()
   return (
     <>
     <div>
 
-    <div className='flex lg:flex-row flex-col  lg:justify-around p-[1rem] lg:pl-[0]'>
+    <div className='flex lg:flex-row flex-col lg:justify-around py-[1rem]  lg:py-[0]'>
       <div className='flex lg:items-center lg:justify-center items-center  justify-between  lg:gap-3'>
-<div className='flex flex-row gap-4 '>
+<div className='flex flex-row gap-4 pl-3'>
         <Image width={80} height={80} src='/assests/oau-logo.png' alt='oau' className='h-auto w-auto' />
         <Image width={80} height={80} src='/assests/pans-logo.png' alt='pans' className='w-auto h-auto' />
 </div>
@@ -82,9 +84,8 @@ const route = useRouter()
                         {mysublinks.sublink.map((slink) => (
                           <li    className="">
                             <Link
-                            onClick={() => setview(slink.name)}
                              href={slink.link}
-                              className={view === slink.name ? "text-md text-primary-500 font-normal" : "text-dark-dark-100 hover:text-primary-500"}
+                              className="text-dark-dark-100 hover:text-primary-500"
                             >
                               {slink.name}
                             </Link>
@@ -116,13 +117,13 @@ const route = useRouter()
 
 
 
-<div className='lg:hidden block absolute w-full h-full   '>
+<div className='lg:hidden block absolute w-full  h-full items-center justify-center   '>
 <div  className={`
-        lg:hidden bg-primary-500 flex flex-col relative gap-[2rem] top-20 h-full overflow-y-auto bottom-0 pt-[2rem] pb-[3rem] pl-2
+        lg:hidden bg-primary-500 flex flex-col relative gap-[2rem] top-[6%] h-full w-full  overflow-y-auto bottom-0 pt-[2rem]  pb-[3rem] pl-[5%]
         duration-500 ${nav ? "left-[-4.3%]" : "left-[-120%]"}
         `}>
 <div onClick={() => setview("home")} className="px-3  md:cursor-pointer group">
-    <h1 className='flex flex-col  text-white text-[20px] font-extrabold ' >
+    <h1 className={view === "home" ? 'flex flex-col  text-white text-[20px] font-extrabold underline underline-offset-4' : "flex flex-col  text-white text-[20px] font-extrabold " }>
               Home
               </h1>
           </div>
@@ -153,9 +154,10 @@ const route = useRouter()
                     {lin.sublinks && lin.sublinks.map((mysublinks) => (
                       <div className='flex flex-col gap-4 lg:p-6'>
                         {mysublinks.sublink.map((slink) => (
-                          <li onClick={() =>route.push(slink.link)} className="list-none pl-[1rem] text-primary-500">
+                          <li className="list-none pl-[1rem] text-primary-500 "  onClick={() => setactive(slink.name)}>
                             <a
-                            onClick={() => setactive(slink.name)}
+                            onClick={() => navigate(slink.link)}
+className={ active === slink.name ? "text-primary-500 underline underline-offset-4" : " text-primary-500"}
                             >
                               {slink.name}
                             </a>
@@ -173,7 +175,7 @@ const route = useRouter()
 
       ))}
 <div onClick={() => setview("articles")} className="px-3  md:cursor-pointer group">
-    <h1 onClick={() => route.push("/articles")} className='flex flex-col  text-white text-[20px] font-extrabold ' >
+    <h1 onClick={() =>navigate("/articles")} className='flex flex-col  text-white text-[20px] font-extrabold ' >
               Articles
               </h1>
           </div>
