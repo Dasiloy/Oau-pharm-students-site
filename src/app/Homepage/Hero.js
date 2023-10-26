@@ -14,7 +14,7 @@ function Hero() {
           style={backgroundImageStyle}
           className="md:flex items-center grid grid-cols-1  "
         >
-          <div className=" text-center md:text-left md:mt-0 mt-28 md:ml-48 ">
+          <div className=" text-center md:text-left md:mt-0 mt-14 md:ml-48 ">
             <div className=" font-extrabold text-3xl md:text-5xl leading-4 md:leading-7">
               <h1>PHARMACEUTICAL ASSOCIATION </h1>
               <h1>OF NIGERIA STUDENTS</h1>
