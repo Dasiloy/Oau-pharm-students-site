@@ -20,7 +20,7 @@ const Articles = () => {
         parties, and other programs aimed at fostering social relationships.</p>
      </div>
 
-     <div className='grid justify-center items-center px-[2rem] gap-4'>
+     <div className='grid justify-center w-[90%] items-center px-[2rem] gap-4'>
      <h1 className='font-bold  text-[32px] text-dark-dark-100 '>Health/Sciences</h1>
      <div className=' flex flex-col items-center justify-center gap-[3rem]'>
 <div className='grid grid-cols-1 lg:grid-cols-2 items-center justify-center gap-8 ' >
@@ -42,7 +42,7 @@ const Articles = () => {
 <button className=' rounded-md w-[210px] bg-primary-500 h-[65px] cursor-pointer font-semibold text-white text-[16px] ease-in-out duration-500 border-[1px] hover:border-primary-500 hover:bg-transparent hover:text-primary-500'>Read More</button>
 </div>
 </div>
-<div className='grid justify-center items-center px-[2rem] gap-4'>
+<div className='grid justify-center W-[90%] items-center px-[2rem] gap-4'>
      <h1 className='font-bold  text-[32px] text-dark-dark-100 '>News/Events</h1>
      <div className=' flex flex-col items-center justify-center gap-[3rem]'>
 <div className='grid grid-cols-1 lg:grid-cols-2 items-center justify-center gap-8 ' >

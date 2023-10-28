@@ -6,10 +6,10 @@ import React from "react";
 import type { Metadata } from "next";
 import { Mulish } from "next/font/google";
 import { Providers } from "./providers";
-import Navlinks from "./components/Navbar/navlinks";
-import Footer from "./components/footer/footer";
-const inter = Mulish({ subsets: ["latin"] });
+import Navlinks from './components/Navbar/navlinks';
 
+const inter = Mulish({ subsets: ["latin"] });
+//anything placed here stay consistent throughout the whole application//
 export const metadata: Metadata = {
   title: "Pans Oau student Website",
   description: "Pans Oau student Website",
@@ -23,9 +23,9 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body className={inter.className}>
-        <Navlinks/>
+        <Navlinks />
         <Providers>{children}</Providers>
-        <Footer/>
+
       </body>
     </html>
   );

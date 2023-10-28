@@ -1,11 +1,12 @@
-import React from "react";
-import Navlinks from "./components/Navbar/navlinks";
+import React from 'react';
+
 export default function Home() {
+  //represent the homepage route.. default rendered as server side component//
+
   return (
+    <main>
 
-    <main className=''>
-
-
+      <div>Home page</div>
     </main>
   );
 }
