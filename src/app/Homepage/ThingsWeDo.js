@@ -20,10 +20,10 @@ function ThingsWeDo() {
         </div>
       </div>
       <div className="md:flex hidden justify-center mt-10 ">
-        <Image src="/ThingsWeDo.svg" alt="pict" width={1000} height={1000} />
+        <Image src="/ThingsWeDo.svg" alt="pict" width={1240} height={628} />
       </div>
       <div className="flex md:hidden justify-center mt-5 ">
-        <Image src="/ACTIVITES.svg" alt="pict" width={1000} height={1000} />
+        <Image src="/ACTIVITES.svg" alt="pict" width={375} height={907} />
       </div>
     </div>
   );

@@ -11,7 +11,7 @@ function AcademicResources() {
           <h1 className="md:text-4xl text-3xl  font-bold">
             ACADEMIC RESOURCES
           </h1>
-          <h1 className="md:text-xl text-lg font-semibold mt-3">
+          <h1 className="md:text-lg text-lg font-semibold mt-3">
             Check your Lecture & Practical Timetable, Academic Calendar and
             Lecture materials.
           </h1>

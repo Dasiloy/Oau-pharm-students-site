@@ -10,7 +10,7 @@ function Reach() {
   };
   const text = 'send message';
   const displayProperties = ' text-fuchsia-800 bg-white';
-  const inputDisplay = 'w-full rounded-lg h-14 p-5';
+  const inputDisplay = 'w-full rounded-lg text-lg h-14 p-5';
   const [inputValue, setInputValue] = useState({
     name: '',
     email: '',
@@ -34,7 +34,7 @@ function Reach() {
             <h1 className='md:text-5xl text-4xl font-extrabold md:mt-0 mt-10 text-white'>
               Reach out to Us
             </h1>
-            <p className='mt-5 text-xl text-white leading-4'>
+            <p className='mt-5 text-lg font-normal text-white leading-4'>
               Do you have any quaestion to ask us? Or do you want to support us
               in any way? Send a message{' '}
             </p>

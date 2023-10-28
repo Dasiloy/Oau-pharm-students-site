@@ -4,17 +4,17 @@ function Download() {
   return (
     <div>
       <div className=' border-b border-b-white '>
-        <div className='grid md:grid-cols-2 grid-cols-1 items-center w-11/12 md:w-10/12 m-auto pt-10 md:pt-20 pb-10'>
+        <div className='grid md:grid-cols-2 grid-cols-1 items-center w-11/12 md:w-11/12 m-auto pt-10 md:pt-20 pb-10'>
           <div className=''>
-            <h1 className=' text-white text-5xl font-bold'>
+            <h1 className=' text-white text-4xl md:text-5xl font-bold'>
               Download Pharmatel
             </h1>
-            <p className=' text-slate-300 leading-4 mt-5'>
+            <p className=' text-slate-300 text-lg leading-4 mt-5'>
               You can download our Pharmatel Magazine which contains all
               activities{' '}
             </p>
           </div>
-          <div className='md:w-9/12 w-full'>
+          <div className='md:w-9/12 w-full m-auto grid'>
             <form className='grid grid-cols-6 md:grid-cols-3 h-fit rounded-lg items-center bg-white'>
               <div className=' col-span-4 md:col-span-2'>
                 <input

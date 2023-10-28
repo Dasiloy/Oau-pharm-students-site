@@ -27,29 +27,33 @@ const Articles = () => {
         </p>
       </div>
 
-      <div className='grid justify-center items-center px-[2rem] gap-4'>
-        <h1 className='font-bold  text-[32px] text-dark-dark-100 '>
+      <div className='grid justify-center items-center px-[2rem] gap-4 lg:w-11/12 m-auto'>
+        <h1 className='font-bold lg:w-11/12 lg:m-auto  text-[32px] text-dark-dark-100 '>
           Health/Sciences
         </h1>
-        <div className=' flex flex-col items-center justify-center gap-[3rem]'>
+        <div className=' flex flex-col items-center justify-center gap-[3rem] '>
           <div className='grid grid-cols-1 lg:grid-cols-2 items-center justify-center gap-8 '>
             {health.map((hlt) => (
-              <div className=''>
-                <div className=' flex flex-col gap-4'>
+              <div className=' '>
+                <div className=' flex flex-col gap-4 shadow-lg rounded-lg lg:w-10/12 m-auto justify-center'>
+                  <div className=''>
                   <Image
                     src={hlt.artimg}
                     alt='coverimg'
                     height={500}
                     width={650}
-                    className=''
+                    className=' w-full'
                   />
+
+                  </div>
+                  <div className='w-11/12 m-auto pb-5'>
                   <h2 className='font-semibold text-primary-500 x]text-[20px] cursor-pointer'>
                     {hlt.header}
                   </h2>
-                  <p className='font-normal text-[14px] text-dark-dark-100 w-[90%]'>
+                  <p className='font-normal text-[14px] text-dark-dark-100 mt-3 w-[90%]'>
                     {hlt.text}
                   </p>
-                  <div className='flex flex-row  gap-2'>
+                  <div className='flex flex-row mt-3  gap-2'>
                     <Image
                       src={hlt.author}
                       width={50}
@@ -64,6 +68,8 @@ const Articles = () => {
                         {hlt.role}
                       </h5>
                     </div>
+                  </div>
+
                   </div>
                 </div>
               </div>
@@ -208,18 +214,7 @@ const Articles = () => {
           </div>
         </div>
       </div>
-      <div className='grid grid-cols-4 my-[2.5rem] lg:my-[5rem] gap-2  lg:gap-6'>
-        {brands.map((brand) => (
-          <div className='flex flex-row '>
-            <Image
-              height={300}
-              width={300}
-              src={brand.brand}
-              alt='brands'
-            />
-          </div>
-        ))}
-      </div>
+     
     </div>
   );
 };

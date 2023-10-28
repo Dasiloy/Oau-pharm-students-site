@@ -10,7 +10,7 @@ function HeaderSection({
   return (
     <div className="md:w-9/12 w-11/12 m-auto text-center">
       <div>
-        <h1 className="md:text-3xl text-2xl text-orange font-bold">
+        <h1 className="md:text-2xl text-2xl text-orange font-bold">
           {FirstHeading}
         </h1>
         <h1

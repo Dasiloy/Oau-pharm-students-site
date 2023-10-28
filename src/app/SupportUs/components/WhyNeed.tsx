@@ -8,7 +8,7 @@ function WhyUs() {
           <h1 className='text-4xl text-orange font-bold'>
             Why we need your support?
           </h1>
-          <p className='text-xl mt-10 leading-4'>
+          <p className='text-lg mt-10 leading-4'>
             <span className='font-bold'> PANS OAU nnnn</span> greatest asset is
             its hardworking and creative members. Quite simply, when you support
             us, you are helping to improve people's health and overall
@@ -18,14 +18,14 @@ function WhyUs() {
           </p>
         </div>
         <div className='text-xl mt-5 font-bold text-blue-800 '>
-          <h1 className='text-2xl font-bold'>You can support PANS OAU by; </h1>
+          <h1 className='text-xl font-bold'>You can support PANS OAU by; </h1>
           <div className='leading-4'>
-            <p className='text-xl mt-3'>Being our Partners</p>
+            <p className='text-lg mt-3'>Being our Partners</p>
             <p>Making Adverts</p>
             <p>Donation</p>
           </div>
         </div>
-        <div className='text-xl mt-5 text-fuchsia-800'>
+        <div className='text-lg mt-5 text-fuchsia-800'>
           <h1 className='text-2xl font-bold'>PANS OAU Bank Account</h1>
           <div className='leading-4 mt-3'>
             <p>
@@ -46,8 +46,8 @@ function WhyUs() {
       <div className='flex justify-center'>
         <Image
           alt='support'
-          width={700}
-          height={500}
+          width={535}
+          height={634}
           src='/support.png'
         />
       </div>

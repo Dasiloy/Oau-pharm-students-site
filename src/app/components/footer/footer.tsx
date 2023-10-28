@@ -10,7 +10,7 @@ import Download from './footerSections/Download'
 import FooterThird from './footerSections/FooterThird'
 const Footer = () => {
   return (
-    <div className=' mt-20 text-lg bg-gray-700'>
+    <div className=' mt-20 text-lg bg-slate-800'>
       <Download />
       <div className=' border-b border-b-white '>
        <FooterSecond />

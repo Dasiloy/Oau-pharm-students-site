@@ -8,19 +8,19 @@ import {
 } from '../Data/PansOauExecutiveData';
 function PansOauExecutives() {
   const executiveStyles =
-    'w-11/12 m-auto grid grid-cols-1 gap-y-5 md:grid-cols-4 gap-5 mt-10';
+    'w-10/12 m-auto grid grid-cols-1 gap-y-5 justify-center md:grid-cols-4 gap-5 mt-10';
     const subExecutiveStyle =
-      'text-center w-11/12 m-auto text-3xl md:text-5xl font-bold text-orange ';
+      'text-center w-11/12 m-auto text-3xl md:text-4xl font-bold text-orange ';
   return (
     <div className='grid gap-y-20 md:gap-y-28'>
       <div>
-        <div className={`${subExecutiveStyle} mt-20`}>
+        <div className={`${subExecutiveStyle}  mt-20`}>
           <h1>PANS OAU 2022/2023 Executive Council</h1>
         </div>
         <div className={`${executiveStyles}`}>
           {PansOauExecutiveData.map((e) => {
             return (
-              <div key={e.id}>
+              <div className=' justify-center grid' key={e.id}>
                 <ExecutiveCard
                   name={e.name}
                   title={e.title}
@@ -39,7 +39,9 @@ function PansOauExecutives() {
           <div className={`${executiveStyles}`}>
             {PharmacyRepCouncil.map((e) => {
               return (
-                <div key={e.id}>
+                <div
+                  className=' justify-center grid'
+                  key={e.id}>
                   <ExecutiveCard
                     name={e.name}
                     title={e.title}
@@ -58,7 +60,9 @@ function PansOauExecutives() {
         <div className={`${executiveStyles}`}>
           {HeadOfCouncil.map((e) => {
             return (
-              <div key={e.id}>
+              <div
+                className=' justify-center grid'
+                key={e.id}>
                 <ExecutiveCard
                   name={e.name}
                   title={e.title}
@@ -76,7 +80,9 @@ function PansOauExecutives() {
         <div className={`${executiveStyles}`}>
           {WebsiteCommitee.map((e) => {
             return (
-              <div key={e.id}>
+              <div
+                className=' justify-center grid'
+                key={e.id}>
                 <ExecutiveCard
                   name={e.name}
                   title={e.title}

@@ -12,7 +12,7 @@ function OurProject() {
       <div style={backgroundImage} className="ourProject">
         <div className="w-10/12 md:mt-10 mt-7 m-auto text-white">
           <div className=" w-11/12 md:w-7/12 pt-16 md:pt-20">
-            <h1 className="text-orange text-lg font-bold">
+            <h1 className="text-orange text-md md:text-xl font-bold">
               OTHER THINGS BY US
             </h1>
             <h1 className="md:text-5xl text-4xl mt-5 font-bold">

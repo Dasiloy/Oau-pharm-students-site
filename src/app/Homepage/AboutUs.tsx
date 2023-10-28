@@ -12,8 +12,8 @@ const AboutUsComponent: React.FC<Aboutus> = ({ image, content }) => {
     <div className='grid grid-cols-1 gap-10  gap-y-5 md:grid-cols-2 w-10/12 lg:9/12 md:w-9/12 m-auto'>
       <div>
         <Image
-          width={650}
-          height={800}
+          width={611}
+          height={522}
           alt=''
           src={image}
         />
@@ -25,7 +25,7 @@ const AboutUsComponent: React.FC<Aboutus> = ({ image, content }) => {
           </h1>
           <h1 className=' text-4xl font-bold mt-3'>About Us</h1>
         </div>
-        <div className='md:text-xl text-lg mt-5 leading-3 md:leading-4'>
+        <div className='md:text-lg text-lg mt-5 leading-3 md:leading-4'>
           {content}
         </div>
         <Button

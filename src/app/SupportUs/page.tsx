@@ -13,8 +13,8 @@ function SupportUs() {
       <div className='mt-20 flex justify-center'>
         <Image src='/map.png' 
         alt='map'
-        width={1900}
-        height={500}
+        width={1440}
+        height={733}
         />
       </div>
     </div>
