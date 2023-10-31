@@ -143,10 +143,11 @@ const route = useRouter()
               </h1>
             </div>
             <div
-              onClick={() => { route.push('/SupportUs');setview('support')}}
-              
+              onClick={() => route.push('/SupportUs')}
+
               className='flex items-center gap-3 justify-center cursor-pointer'>
               <h1
+               onClick={() => setview('support')}
                 className={
                   view === 'support'
                     ? ' text-[16px] font-normal flex items-center gap-3 justify-center text-primary-500 underline underline-offset-8'
@@ -169,7 +170,7 @@ const route = useRouter()
                 <h1
                   className={
                     view === 'home'
-                      ? 'flex flex-col  text-white text-[20px] font-extrabold underline underline-offset-4'
+                      ? 'flex flex-col  text-white text-[20px] font-extrabold underline underline-offset-8'
                       : 'flex flex-col  text-white text-[20px] font-extrabold '
                   }>
                   Home
@@ -239,19 +240,19 @@ const route = useRouter()
                 className='px-3  md:cursor-pointer group'>
                 <h1
                   onClick={() => navigate('/articles')}
-                  className='flex flex-col  text-white text-[20px] font-extrabold '>
+                  className={view === "articles" ? 'flex flex-col  text-white text-[20px] font-extrabold underline underline-offset-8 ' : 'flex flex-col  text-white text-[20px] font-extrabold '}>
                   Articles
                 </h1>
               </div>
               <div
                 onClick={() => {
-                 
+
                   setview('support');
                 }}
                 className='px-3  md:cursor-pointer group'>
                 <h1
                   onClick={() => navigate('/SupportUs')}
-                  className='flex flex-col  text-white text-[20px] font-extrabold '>
+                  className={view === "support" ? 'flex flex-col  text-white text-[20px] font-extrabold underline underline-offset-8 ' : 'flex flex-col  text-white text-[20px] font-extrabold '}>
                   Support Us
                 </h1>
               </div>

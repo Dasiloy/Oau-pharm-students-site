@@ -4,7 +4,7 @@ import Image from 'next/image'
 import { brands } from '@/app/articles/data'
 const Feedapansite = () => {
   return (
-    <div className='flex flex-col items-center justify-center gap-[4rem] lg:gap-[8rem]'>
+    <div className='flex flex-col items-center justify-center gap-[3rem] lg:gap-[6rem]'>
      <div className='flex flex-col items-center justify-center gap-10 '>
       <div className='flex items-center justify-center bg-[url("/assests/rectangle9.png")] bg-cover bg-center h-[200px] lg:h-[500px] w-full'>
      <h1 className='font-extrabold text-[24px] lg:text-[56px] flex items-center justify-center text-white'>PROJECTS</h1>
