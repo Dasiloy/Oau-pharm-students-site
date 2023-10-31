@@ -2,3 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
+.backgroundPict {
+  background-image: url("/Oau-pharm-students-site/public/backgroundP.png");
+  background-position: center;
+}
+.bgcolor {
+  background-color: rgba(128, 0, 128, 0.349);
+}
+.backgroundPright {
+  background-color: rgba(128, 0, 128, 0.711);
+}
+.presidentPosition {
+  right: 28%;
+}
+.homepageHeight {
+  height: 850px;
+}
+.ourProject {
+  height: 600px;
+}
+.cardBackground {
+  background-color: rgba(105, 105, 105, 0.834);
+}
