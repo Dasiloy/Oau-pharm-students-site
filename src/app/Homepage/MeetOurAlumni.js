@@ -23,7 +23,7 @@ function MeetOurAlumni() {
         SecondHeading={SecondHeading}
         HeadingBody={HeadingBody}
       />
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-0 items-center w-11/12  md:w-10/12 m-auto mt-5 md:mt-14">
+      <div className="grid grid-cols-1  md:grid-cols-3 gap-0 items-center w-11/12  md:w-10/12 m-auto mt-5 md:mt-14">
         <div className=" md:col-span-2 bg-fuchsia-800 rounded-xl text-white  md:h-fit ">
           <div className="w-11/12 md:w-10/12 m-auto pb-10">
             <h1 className=" pt-20 text-3xl md:text-4xl font-bold">
