@@ -28,7 +28,7 @@ function OurProject() {
           </div>
         </div>
       </div>
-      <div className="grid  grid-cols-1 justify-center gap-y-5 gap-5 md:grid-cols-3 lg:w-10/12 m-auto -mt-32">
+      <div className="grid  grid-cols-1 justify-center gap-10 gap-y-5 lg:grid-cols-3 lg:w-10/12 m-auto -mt-32">
         {OurProjects.map((e) => {
           return (
             <div key={e.id} className="">

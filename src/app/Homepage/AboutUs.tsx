@@ -9,7 +9,7 @@ const AboutUsComponent: React.FC<Aboutus> = ({ image, content }) => {
   const text = 'Read more';
   const displayProperties = 'bg-fuchsia-900 text-white mt-12';
   return (
-    <div className='grid grid-cols-1 gap-10  gap-y-5 md:grid-cols-2 w-10/12 lg:9/12 md:w-9/12 m-auto'>
+    <div className='grid grid-cols-1 gap-10  gap-y-5 lg:grid-cols-2 w-10/12 lg:9/12 md:w-9/12 m-auto'>
       <div>
         <Image
           width={611}

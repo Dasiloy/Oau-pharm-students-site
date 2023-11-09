@@ -20,7 +20,7 @@ function OurArticles() {
           </p>
         </div>
       </div>
-      <div className="grid grid-cols-1 gap-10 gap-y-10 md:grid-cols-3 w-9/12 md:w-8/12 m-auto mt-14">
+      <div className="grid grid-cols-1 gap-10 gap-y-10 lg:grid-cols-3 w-9/12 md:w-8/12 m-auto mt-14">
         {OurArticlesData.map((e) => {
           return (
             <div key={e.id} className="flex justify-center">
