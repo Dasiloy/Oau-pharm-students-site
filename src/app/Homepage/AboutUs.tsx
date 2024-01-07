@@ -20,12 +20,12 @@ const AboutUsComponent: React.FC<Aboutus> = ({ image, content }) => {
       </div>
       <div>
         <div>
-          <h1 className='text-2xl text-orange font-bold'>
+          <h1 className='lg:text-2xl text-xl text-orange font-bold'>
             I why are we called pharmaco?
           </h1>
-          <h1 className=' text-4xl font-bold mt-3'>About Us</h1>
+          <h1 className='text-3xl ld:text-4xl font-bold mt-3'>About Us</h1>
         </div>
-        <div className='md:text-lg text-lg mt-5 leading-3 md:leading-4'>
+        <div className='md:text-lg text-md mt-5 leading-3 md:leading-4'>
           {content}
         </div>
         <Button
