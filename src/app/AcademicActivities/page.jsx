@@ -10,6 +10,7 @@ import PictureLayoutTemplate from '../../app/components/OurActivities/PictureLay
 import president from '../../../public/i.png' 
 import Image from 'next/image';
 import ReversePicturesLayout from '../../app/components/OurActivities/ReversePicturesLayout'
+
 function Page() {
   const header = 'Academic Activities';
   const body = ` PANS OAU makes an effort to ensure that her members are not only bookworms,
@@ -27,15 +28,15 @@ function Page() {
       <ActivityTopBody
         header={header}
         body={body}
-        ClassName={'mt-20 leading-4'}
+        ClassName={'lg:mt-20 mt-10 leading-3 lg:leading-4'}
         bodyStyle={'font-semibold'}
       />
       <ActivityTopBody
         header={'News on Academic Activities'}
         body={secondBody}
-        ClassName={'mt-20 leading-4'}
+        ClassName={'lg:mt-20 mt-10 leading-3 lg:leading-4'}
       />
-      <div className='grid gap-y-5 mt-20'>
+      <div className='grid gap-y-5 mt-10 lg:mt-20'>
         {AcademicActivitiesData.map((item) => {
           return (
             <BodyTemplate
@@ -54,7 +55,7 @@ function Page() {
         mappedImages={AcademicActivitiesPicturesData}
         sideColumnImages={president}
       />
-      <div className=' w-8/12 m-auto gap-x-10 gap-y-10 mt-20 grid grid-cols-3'>
+      <div className=' lg:w-8/12 w-11/12 m-auto gap-x-10 lg:gap-y-10 gap-y-5 mt-20 grid grid-cols-1 lg:grid-cols-3'>
         {AcademicSecondPicturesData.map((item) => {
           return (
             <div className=' grid justify-center'>

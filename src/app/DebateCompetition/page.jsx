@@ -58,7 +58,7 @@ function Page() {
         mappedImages={DebatesPicturesData}
         sideColumnImages={Nero}
       />
-      <div className=' w-8/12 m-auto gap-x-10 gap-y-10 mt-20 grid grid-cols-3'>
+      <div className='  lg:w-8/12 w-11/12 m-auto gap-x-10 lg:gap-y-10 gap-y-5 mt-20 grid grid-cols-1 lg:grid-cols-3'>
         {DebateSecondPicturesData.map((item) => {
           return (
             <div className=' grid justify-center'>

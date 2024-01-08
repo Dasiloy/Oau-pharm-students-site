@@ -36,10 +36,10 @@ function Page() {
         bodyStyle={'font-semibold'}
       />
       <Header headerContent={'2021/2022 Award Recognition for All Parts'} />
-      <div className=' grid grid-cols-2 gap-10 w-8/12 m-auto mt-10'>
+      <div className=' grid lg:grid-cols-2 gap-10 w-8/12 m-auto mt-10'>
         {Award.map((item) => {
           return (
-            <div className=' grid justify-center '>
+            <div key={item.id} className=' grid justify-center '>
               <Image
                 height={714}
                 width={593}
@@ -75,7 +75,7 @@ function Page() {
         mappedImages={AwardsPicturesData}
         sideColumnImages={president}
       />
-      <div className=' w-8/12 m-auto gap-x-10 gap-y-10 mt-20 grid grid-cols-3'>
+      <div className=' lg:w-8/12 w-11/12 m-auto gap-x-10 lg:gap-y-10 gap-y-5 mt-20 grid grid-cols-1 lg:grid-cols-3'>
         {AwardSecondPicturesData.map((item) => {
           return (
             <div className=' grid justify-center'>
