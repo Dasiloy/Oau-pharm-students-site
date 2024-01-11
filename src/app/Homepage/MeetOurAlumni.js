@@ -29,7 +29,7 @@ function MeetOurAlumni() {
             <h1 className=" pt-20 text-3xl md:text-4xl font-bold">
               Pharm. Adejuwon Otelaja
             </h1>
-            <p className="md:mt-10 mt-5 text-lg md:text-xl leading-4 ">
+            <p className="md:mt-10 mt-5 text-md lg:text-lg leading-4 ">
               Adejuwon Otelaja was born on the 16th of August 1950 in . He began
               his education at Okrika Grammar School, Okrika. The which started
               in July 1967 had his education interrupted. He later joined the

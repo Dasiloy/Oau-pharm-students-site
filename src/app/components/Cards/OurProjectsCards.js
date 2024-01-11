@@ -11,10 +11,10 @@ function OurProjectsCardSlip({ image, headings, body }) {
         </div>
 
         <div className=" text-center w-11/12 m-auto">
-          <h1 className="text-xl mt-5 text-fuchsia-900 font-bold">
+          <h1 className="lg:text-xl text-lg mt-5 text-fuchsia-900 font-bold">
             {headings}
           </h1>
-          <p className="mt-3 ">{body}</p>
+          <p className="lg:text-md text-sm mt-3 ">{body}</p>
         </div>
         <div className="flex justify-center pb-5">
           <h1>Read more</h1>

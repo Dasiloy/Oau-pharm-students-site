@@ -26,7 +26,7 @@ function FooterSecond() {
           </div>
         </div>
         <div>
-          <p className=' text-white leading-4 mt-5'>
+          <p className=' text-white text-md lg:text-lg leading-4 mt-5'>
             Pharmacy was first established as a Department in the former
             Nigerian College of Arts, Science and Technology, Ibadan Branch, in
             the year 1957. It, however, continued to award Diploma in Pharmacy
@@ -74,7 +74,7 @@ function FooterSecond() {
       </div>
       <div className=' text-center'>
         <h1 className=' text-2xl font-extrabold text-white'>Quick Links</h1>
-        <ul className='mt-5 leading-4 text-slate-100'>
+        <ul className='mt-5 text-md lg:text-lg leading-4 text-slate-100'>
           <li>Home</li>
           <li>About Us</li>
           <li>Activities</li>
@@ -85,7 +85,7 @@ function FooterSecond() {
       </div>
       <div>
         <h1 className=' text-2xl font-extrabold text-white'>Contact Us</h1>
-        <div className=' grid gap-y-5 mt-5 text-white'>
+        <div className=' text-md lg:text-lg grid gap-y-5 mt-5 text-white'>
           <p>
             PANS Secretariat, inside Faculty of Pharmacy, Obafemi Awolowo
             University, Ile-Ife.
