@@ -10,7 +10,7 @@ function AlumniHero() {
   }
   return (
     <div className=' bg-fuchsia-800'>
-      <div className='m-auto w-11/12 md:w-8/12 pt-20 '>
+      <div className='m-auto w-11/12 md:w-8/12 pt-10 md:pt-20 '>
         <div className='flex justify-between w-11/12 m-auto md:m-0 gap-5  md:w-10/12'>
           <div onClick={backMoves} className='flex w-fit'>
             <CiCircleChevLeft

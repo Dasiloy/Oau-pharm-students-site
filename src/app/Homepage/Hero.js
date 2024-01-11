@@ -10,10 +10,10 @@ function Hero() {
     // Set the height you want
   };
   return (
-    <div className=" ">
-      <div className="">
-        <div className="md:flex items-center  bg-[url('/backgroundP.png')] grid-cols-1 bg-cover bg-center h-[300px] lg:h-[840px] w-full  ">
-          <div className=" text-center md:text-left md:mt-0 mt-14 md:ml-48 ">
+    <div className="relative">
+      <div className="grid  lg:grid-cols-10">
+        <div className=" bg-[url('/backgroundP.png')] bg-cover bg-center h-[500px] lg:h-[840px] bg-fuchsia-400 col-span-7 grid ">
+          <div className="lg:w-10/12 text-center md:text-left w-11/12  m-auto items-center z-50 ">
             <div className=" font-bold text-3xl md:text-5xl leading-4 md:leading-7">
               <h1>PHARMACEUTICAL ASSOCIATION </h1>
               <h1>OF NIGERIA STUDENTS</h1>
@@ -23,8 +23,12 @@ function Hero() {
               <h1>MOTTO: DEDICATION AND HONESTY</h1>
             </div>
           </div>
-
-          <div className=" md:grid hidden md:bottom-0 w-11/12 m-auto md:m-px md:w-fit ">
+        </div>
+        <div className="bg-[url('/backgroundPright.png')] lg:grid hidden bg-cover bg-center h-[840px] bg-fuchsia-800 col-span-3"></div>
+      </div>
+      <div className="absolute bottom-0 xl:grid hidden lg:hidden  xl:right-[250px]  2xl:right-[400px]">
+        <div className="">
+          <div className=" md:bottom-0 w-11/12 m-auto md:m-px md:w-fit ">
             <div className=" w-fit">
               <Image width={500} height={500} alt="" src="/president.png" />
               <div className="w-fit relative -mt-20 ">
@@ -40,7 +44,9 @@ function Hero() {
             </div>
           </div>
         </div>
-        <div className=" md:bottom-0 grid md:hidden w-11/12 m-auto md:m-px md:w-fit ">
+      </div>
+      <div className='md:hidden  bg-[url("/backgroundPright.png")] bg-cover bg-center  bg-fuchsia-200 '>
+        <div className=" md:bottom-0 w-11/12 m-auto md:m-px md:w-fit ">
           <div className=" w-fit">
             <Image width={500} height={500} alt="" src="/president.png" />
             <div className="w-fit relative -mt-20 ">

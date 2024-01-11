@@ -9,7 +9,7 @@ function Download() {
             <h1 className=' text-white text-4xl md:text-5xl font-bold'>
               Download Pharmatel
             </h1>
-            <p className=' text-slate-300 text-lg leading-4 mt-5'>
+            <p className=' text-slate-300 text-md lg:text-lg leading-4 mt-5'>
               You can download our Pharmatel Magazine which contains all
               activities{' '}
             </p>

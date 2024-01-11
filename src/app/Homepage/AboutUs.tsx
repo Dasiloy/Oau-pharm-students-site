@@ -9,7 +9,7 @@ const AboutUsComponent: React.FC<Aboutus> = ({ image, content }) => {
   const text = 'Read more';
   const displayProperties = 'bg-fuchsia-900 text-white mt-12';
   return (
-    <div className='grid grid-cols-1 gap-10  gap-y-5 md:grid-cols-2 w-10/12 lg:9/12 md:w-9/12 m-auto'>
+    <div className='grid grid-cols-1 gap-10  gap-y-5 lg:grid-cols-2 w-10/12 lg:9/12 md:w-9/12 m-auto'>
       <div>
         <Image
           width={611}
@@ -20,12 +20,12 @@ const AboutUsComponent: React.FC<Aboutus> = ({ image, content }) => {
       </div>
       <div>
         <div>
-          <h1 className='text-2xl text-orange font-bold'>
+          <h1 className='lg:text-2xl text-xl text-orange font-bold'>
             I why are we called pharmaco?
           </h1>
-          <h1 className=' text-4xl font-bold mt-3'>About Us</h1>
+          <h1 className='text-3xl ld:text-4xl font-bold mt-3'>About Us</h1>
         </div>
-        <div className='md:text-lg text-lg mt-5 leading-3 md:leading-4'>
+        <div className='md:text-lg text-md mt-5 leading-3 md:leading-4'>
           {content}
         </div>
         <Button

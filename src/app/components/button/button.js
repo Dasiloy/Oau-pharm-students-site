@@ -6,7 +6,7 @@ function Button({ text, displayProperties }) {
       <button
         className={`flex ${displayProperties} w-44 rounded-lg  shadow-lg `}
       >
-        <h1 className="p-5 m-auto ">{text}</h1>
+        <h1 className="lg:p-5 p-4 m-auto text-sm lg:text-md  ">{text}</h1>
       </button>
     </div>
   );
