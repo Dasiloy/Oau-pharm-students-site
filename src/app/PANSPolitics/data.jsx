@@ -1,8 +1,8 @@
-export const PANSWeekData = [
+export const PANSPoliticsData = [
   {
     id: '1',
-    image: '/Jacket.png',
-    title: 'PANS National Conference - Oct 22nd to Oct 29th',
+    image: '/annual.png',
+    title: '4th Parliamentary Conference',
     body: `Dear PANSITE(S)
 We are thrilled to announce the appointment of our new Academic Secretary,
  Adeleke Adekemi(Currently Part 4), by the Executive Council, under the recommendation 
@@ -12,23 +12,23 @@ by the executive council at the first executive council meeting of the administr
   },
   {
     id: '2',
-    image: '/order.png',
+    image: '/akande.png',
     title:
-      'Narcotic Abuse in Nigeria Tertiary Institution - ADMAP National Campaign',
+      'Congrats to Hon. Akande Peter for being the Deputy Speaker at SU Level',
     body: `The new Secretariat was commissioned by the incumbent Dean during the Maleekberry led administration. 
 We are thrilled to announce the appointment of our new Academic Secretary, Adeleke Adekemi(Currently Part 4), by the Executive Council,
  under the recommendation of the Office of the Vice President, in accordance with the PANS Constitution, Article 18, Section 4, Subsection 38.`,
   },
   {
     id: '3',
-    image: '/Dday.png',
-    title: 'Webinar - Pharmacy Students as Advocates for Health Policy Change ',
+    image: '/paliamentry.png',
+    title: 'Annual Parliamentary Conference - PANS Week ',
     body: `The new Secretariat was commissioned by the incumbent Dean during the Maleekberry led administration. 
 We are thrilled to announce the appointment of our new Academic Secretary, Adeleke Adekemi(Currently Part 4), by the Executive Council, 
 under the recommendation of the Office of the Vice President, in accordance with the PANS Constitution, Article 18, Section 4, Subsection 38.`,
   },
 ];
-export const PANSWeekPicturesData = [
+export const PANSPoliticsPicturesData = [
   {
     id: 1,
     image: '/v.png',
@@ -46,39 +46,29 @@ export const PANSWeekPicturesData = [
     image: '/iv.png',
   },
 ];
-export const PANSWeekSecondPicturesData = [
+export const PANSPoliticsSecondPicturesData = [
   {
     id: 1,
-    image: '/Healthi.png',
+    image: '/v.png',
   },
   {
     id: 2,
-    image: '/Healthii.png',
+    image: '/ii.png',
   },
   {
     id: 3,
-    image: '/Healthiii.png',
+    image: '/iii.png',
   },
   {
     id: 4,
-    image: '/Healthiv.png',
-  },
-];
-export const WeekOutreachPicturesData = [
-  {
-    id: 1,
-    image: '/Healthi.png',
+    image: '/iv.png',
   },
   {
-    id: 2,
-    image: '/Healthii.png',
+    id: 5,
+    image: '/iii.png',
   },
   {
-    id: 3,
-    image: '/Healthiii.png',
-  },
-  {
-    id: 4,
-    image: '/Healthiv.png',
+    id: 6,
+    image: '/iv.png',
   },
 ];
