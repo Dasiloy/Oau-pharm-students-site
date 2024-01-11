@@ -31,7 +31,7 @@ function page() {
       <ActivityTopBody
         header={'Sport Activities'}
         body={body}
-        ClassName={'lg:mt-20 mt-10 leading-4'}
+        ClassName={'lg:mt-20 mt-10 leading-3 lg:leading-4'}
         bodyStyle={'font-semibold'}
       />
       <Header headerContent={'PANS OAU Faculty Team '} />
@@ -41,7 +41,7 @@ function page() {
       <ActivityTopBody
         header={'News on Sport Activities'}
         body={secondBody}
-        ClassName={'mt-20 leading-4'}
+        ClassName={'lg:mt-20 mt-10 leading-3 lg:leading-4'}
         bodyStyle={''}
       />
       <div className='grid gap-y-5 mt-20'>

@@ -31,13 +31,13 @@ function Page() {
       <ActivityTopBody
         header={'Health Outreaches'}
         body={body}
-        ClassName={'mt-20 leading-4'}
+        ClassName={'lg:mt-20 mt-10 leading-3 lg:leading-4'}
         bodyStyle={'font-semibold'}
       />
       <ActivityTopBody
         header={'News on Health Outreaches'}
         body={secondBody}
-        ClassName={'mt-20 leading-4'}
+        ClassName={'lg:mt-20 mt-10 leading-3 lg:leading-4'}
         bodyStyle={''}
       />
       <div className='grid gap-y-5 mt-20'>

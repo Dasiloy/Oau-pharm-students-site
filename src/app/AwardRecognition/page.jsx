@@ -30,16 +30,18 @@ function Page() {
     <div>
       <HeroPageCard headings={'Our Activities'} />
       <ActivityTopBody
-        header={'News on Academic Activities'}
+        header={'News on Award & Recognition'}
         body={secondBody}
-        ClassName={'mt-20 leading-4'}
+        ClassName={'lg:mt-20 mt-10 leading-3 lg:leading-4'}
         bodyStyle={'font-semibold'}
       />
       <Header headerContent={'2021/2022 Award Recognition for All Parts'} />
       <div className=' grid lg:grid-cols-2 gap-10 w-8/12 m-auto mt-10'>
         {Award.map((item) => {
           return (
-            <div key={item.id} className=' grid justify-center '>
+            <div
+              key={item.id}
+              className=' grid justify-center '>
               <Image
                 height={714}
                 width={593}
@@ -54,7 +56,7 @@ function Page() {
       <ActivityTopBody
         header={'News on Award & Recognition'}
         body={News}
-        ClassName={'mt-20 leading-4'}
+        ClassName={'lg:mt-20 mt-10 leading-3 lg:leading-4'}
         bodyStyle={''}
       />
       <div className=' mt-10'>
