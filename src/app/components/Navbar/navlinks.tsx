@@ -33,7 +33,7 @@ setnav(!nav)
 const route = useRouter()
   return (
     <>
-      <div>
+      <div className='z-10'>
         <div className='flex lg:flex-row flex-col lg:justify-around py-[1rem]  lg:py-[0]'>
           <div className='flex lg:items-center lg:justify-center items-center  justify-between  lg:gap-3'>
             <div className='flex flex-row gap-4 pl-3'>

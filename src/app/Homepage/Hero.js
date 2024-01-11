@@ -10,7 +10,7 @@ function Hero() {
     // Set the height you want
   };
   return (
-    <div className="relative">
+    <div className="relative -z-10">
       <div className="grid  lg:grid-cols-10">
         <div className=" bg-[url('/backgroundP.png')] bg-cover bg-center h-[500px] lg:h-[840px] bg-fuchsia-400 col-span-7 grid ">
           <div className="lg:w-10/12 text-center md:text-left w-11/12  m-auto items-center z-50 ">
