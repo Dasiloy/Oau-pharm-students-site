@@ -8,6 +8,7 @@ import {AiOutlineMenu} from "react-icons/ai"
 import {ImCross} from "react-icons/im"
 import Link from 'next/link';
 import Image from 'next/image';
+import { useSelectedLayoutSegments } from 'next/navigation';
 const Navlinks = () => {
   const [heading, setHeading] = useState("");
   const [subHeading, setSubHeading] = useState("");
@@ -16,6 +17,10 @@ const Navlinks = () => {
   const [open, setOpen] = useState("");
   const [nav, setnav] = useState(false);
 
+  const segment = useSelectedLayoutSegments();
+console.log(segment)
+{console.log(segment[1])}
+{console.log(segment[0])}
 function viewed(val:string) {
 setview(val)
 if(val === view){
@@ -62,12 +67,12 @@ const route = useRouter()
             <div
               onClick={() => {
                 route.push('/');
-                setview('home');
+
               }}
               className='flex items-center gap-3 justify-center cursor-pointer'>
               <h1
                 className={
-                  view === 'home'
+                  segment[0] === undefined
                     ? ' text-[16px] font-normal flex items-center gap-3 justify-center text-primary-500 underline underline-offset-8'
                     : 'font-normal text-[16px] gap-3 flex items-center justify-center text-dark-dark-100'
                 }>
@@ -81,8 +86,8 @@ const route = useRouter()
                     onClick={() => viewed(link.name)}
                     className={
                       view === link.name
-                        ? '  font-normal text-[16px] flex items-center gap-3 justify-center text-primary-500 underline underline-offset-8'
-                        : 'font-normal text-[16px] gap-3 flex items-center justify-center text-dark-dark-100'
+                        ? '  font-normal text-[16px] flex items-center gap-3 justify-center'
+                        : 'font-normal text-[16px] gap-3 flex items-center justify-center'
                     }>
                     <h1 onClick={() => setOpen(link.name)}>{link.name}</h1>
                     {link.submenu == true ? (
@@ -111,14 +116,18 @@ const route = useRouter()
                               link.sublinks.map((mysublinks) => (
                                 <div className='flex flex-col gap-4 p-6'>
                                   {mysublinks.sublink.map((slink) => (
-                                    <li className=''>
+                                    <li className='list-none'>
                                       <Link
                                         href={slink.link}
-                                        className='text-dark-dark-100 hover:text-primary-500'>
+                                        className={segment[1] === slink.segment ? " font-normal text-[16px] flex items-center gap-3 justify-center text-primary-500 underline underline-offset-8" :
+                                        'font-normal text-[16px] gap-3 flex items-center justify-center text-dark-dark-100'}>
+
                                         {slink.name}
                                       </Link>
+
                                     </li>
-                                  ))}
+                                  ))  }
+
                                 </div>
                               ))}
                           </div>
@@ -133,9 +142,8 @@ const route = useRouter()
               onClick={() => route.push('/articles')}
               className='flex items-center gap-3 justify-center cursor-pointer'>
               <h1
-                onClick={() => setview('articles')}
                 className={
-                  view === 'articles'
+                  segment[0] === 'articles'
                     ? ' text-[16px] font-normal flex items-center gap-3 justify-center text-primary-500 underline underline-offset-8'
                     : 'font-normal text-[16px] gap-3 flex items-center justify-center text-dark-dark-100'
                 }>
@@ -143,13 +151,12 @@ const route = useRouter()
               </h1>
             </div>
             <div
-              onClick={() => route.push('/SupportUs')}
+              onClick={() => { route.push('/SupportUs')}}
 
               className='flex items-center gap-3 justify-center cursor-pointer'>
               <h1
-               onClick={() => setview('support')}
                 className={
-                  view === 'support'
+                  segment[0] === 'support'
                     ? ' text-[16px] font-normal flex items-center gap-3 justify-center text-primary-500 underline underline-offset-8'
                     : 'font-normal text-[16px] gap-3 flex items-center justify-center text-dark-dark-100'
                 }>
@@ -158,19 +165,20 @@ const route = useRouter()
             </div>
           </div>
 
-          <div className='lg:hidden block absolute w-full  h-full items-center justify-center   '>
+          <div className='lg:hidden block absolute w-full overflow-y-hidden h-screen items-center justify-center   '>
             <div
               className={`
-        lg:hidden bg-primary-500 flex flex-col relative gap-[2rem] top-[6%] h-full w-full  overflow-y-auto bottom-0 pt-[2rem]  pb-[3rem] pl-[5%]
-        duration-500 ${nav ? 'left-[-4.3%]' : 'left-[-120%]'}
+        lg:hidden bg-primary-500 flex flex-col relative gap-[2rem] top-[6%] h-full   w-full  overflow-y-hidden bottom-0 pt-[2rem]  pb-[3rem] pl-[5%]
+        duration-500 ${nav ? 'left-[0%]' : 'left-[-120%]'}
         `}>
               <div
-                onClick={() => setview('home')}
+
                 className='px-3  md:cursor-pointer group'>
                 <h1
+                onClick={() => navigate('/')}
                   className={
-                    view === 'home'
-                      ? 'flex flex-col  text-white text-[20px] font-extrabold underline underline-offset-8'
+                    segment[0] === undefined
+                      ? 'flex flex-col  text-white text-[20px] font-extrabold underline underline-offset-4'
                       : 'flex flex-col  text-white text-[20px] font-extrabold '
                   }>
                   Home
@@ -213,14 +221,13 @@ const route = useRouter()
                                 <div className='flex flex-col gap-4 lg:p-6'>
                                   {mysublinks.sublink.map((slink) => (
                                     <li
-                                      className='list-none pl-[1rem] text-primary-500 '
-                                      onClick={() => setactive(slink.name)}>
+                                      className='list-none pl-[1rem] text-primary-500 '>
                                       <a
                                         onClick={() => navigate(slink.link)}
                                         className={
-                                          active === slink.name
+                                          segment[1] === slink.segment
                                             ? 'text-primary-500 underline underline-offset-4'
-                                            : ' text-primary-500'
+                                            : ' text-dark-dark-100'
                                         }>
                                         {slink.name}
                                       </a>
@@ -236,11 +243,15 @@ const route = useRouter()
                 </div>
               ))}
               <div
-                onClick={() => setview('articles')}
+
                 className='px-3  md:cursor-pointer group'>
                 <h1
                   onClick={() => navigate('/articles')}
-                  className={view === "articles" ? 'flex flex-col  text-white text-[20px] font-extrabold underline underline-offset-8 ' : 'flex flex-col  text-white text-[20px] font-extrabold '}>
+                  className={
+                    segment[0] === "articles"
+                      ? 'flex flex-col  text-white text-[20px] font-extrabold underline underline-offset-4'
+                      : 'flex flex-col  text-white text-[20px] font-extrabold '
+                  }>
                   Articles
                 </h1>
               </div>
@@ -251,8 +262,12 @@ const route = useRouter()
                 }}
                 className='px-3  md:cursor-pointer group'>
                 <h1
-                  onClick={() => navigate('/SupportUs')}
-                  className={view === "support" ? 'flex flex-col  text-white text-[20px] font-extrabold underline underline-offset-8 ' : 'flex flex-col  text-white text-[20px] font-extrabold '}>
+                  onClick={() => navigate('/support')}
+                  className={
+                    segment[0] === "support"
+                      ? 'flex flex-col  text-white text-[20px] font-extrabold underline underline-offset-4'
+                      : 'flex flex-col  text-white text-[20px] font-extrabold '
+                  }>
                   Support Us
                 </h1>
               </div>
