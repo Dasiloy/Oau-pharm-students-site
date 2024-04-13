@@ -82,13 +82,7 @@ Kindly <span className='text-[#ECBB55] items-center justify-center'>Contact Us <
 </div>
 </div>
 
-<div className='grid grid-cols-4 my-[2.5rem] lg:my-[5rem] gap-2  lg:gap-6'>
-  {brands.map((brand) =>(
-    <div className='flex flex-row '>
-      <Image  height={300} width={300}  src={brand.brand} alt='brands'    />
-    </div>
-  ))}
-</div>
+
 
       </div>
   )
