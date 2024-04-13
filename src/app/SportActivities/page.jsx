@@ -26,6 +26,7 @@ function page() {
     to gain other extraordinary activities. 
   `;
   return (
+    
     <div>
       <HeroPageCard headings={'Our Activities'} />
       <ActivityTopBody
@@ -84,5 +85,4 @@ function page() {
     </div>
   );
 }
-
 export default page
