@@ -7,12 +7,16 @@ import OurProject from './Homepage/OurProject';
 import OurArticles from './Homepage/OurArticles';
 import MeetOurAlumni from './Homepage/MeetOurAlumni';
 import Ourpathners from './Homepage/Ourpathners';
-import BOOK from './Homepage/BOOK';
 import SupportUs from './Homepage/SupportUs';
-import Navlinks from './components/navBar/navlinks';
+import Image from 'next/image';
 export default function Home() {
   //represent the homepage route.. default rendered as server side component//
-
+  const backgroundImageStyle = {
+    backgroundImage: 'url(/backgroundP.png)',
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+    backgroundRepeat: 'no-repeat', // Set the height you want
+  };
   return (
     <main>
       <Hero />
@@ -23,9 +27,7 @@ export default function Home() {
       <OurArticles />
       <MeetOurAlumni />
       <Ourpathners />
-      <BOOK />
       <SupportUs />
-      <div>Home page</div>
     </main>
   );
 }

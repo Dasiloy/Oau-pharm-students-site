@@ -1,0 +1,74 @@
+    <div className="backgroundPict md:h-4/6 relative">
+      <div className="homepageHeight grid md:grid-cols-5">
+        <div style={backgroundImageStyle} className="bgcolor col-span-3 ">
+          <div className=" ml-10 md:ml-48 mt-32 md:mt-72">
+            <div className=" font-extrabold text-3xl md:text-5xl leading-4 md:leading-7">
+              <h1>PHARMACEUTICAL ASSOCIATION </h1>
+              <h1>OF NIGERIA STUDENTS</h1>
+              <h1> (PANS OAU) </h1>
+            </div>
+            <div className=" mt-10 text-3xl font-extrabold text-fuchsia-950">
+              <h1>MOTTO: DEDICATION AND HONESTY</h1>
+            </div>
+          </div>
+        </div>
+        <div
+          style={backgroundImageRight}
+          className="backgroundPright hidden md:block col-span-2"
+        ></div>
+ 
+
+
+
+
+
+
+
+ 
+   <div className=" ">
+      <div className="">
+        <div className="md:flex items-center  bg-[url('/backgroundP.png')] grid-cols-1 bg-cover bg-center h-[300px] lg:h-[840px] w-full  ">
+          <div className=" text-center md:text-left md:mt-0 mt-14 md:ml-48 ">
+            <div className=" font-bold text-3xl md:text-5xl leading-4 md:leading-7">
+              <h1>PHARMACEUTICAL ASSOCIATION </h1>
+              <h1>OF NIGERIA STUDENTS</h1>
+              <h1> (PANS OAU) </h1>
+            </div>
+            <div className=" m-5 md:mt-10 text-2xl md:text-4xl font-bold text-fuchsia-950">
+              <h1>MOTTO: DEDICATION AND HONESTY</h1>
+            </div>
+          </div>
+
+          <div className=" md:grid hidden md:bottom-0 w-11/12 m-auto md:m-px md:w-fit ">
+            <div className=" w-fit">
+              <Image width={500} height={500} alt="" src="/president.png" />
+              <div className="w-fit relative -mt-20 ">
+                <div className="p-3  border bg-white rounded-t-lg">
+                  <h1 className=" text-2xl font-bold text-fuchsia-800">
+                    Ademola Blessing
+                  </h1>
+                  <h2 className=" text-md  text-fuchsia-800">
+                    PANS OAU President
+                  </h2>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className=" md:bottom-0 grid md:hidden w-11/12 m-auto md:m-px md:w-fit ">
+          <div className=" w-fit">
+            <Image width={500} height={500} alt="" src="/president.png" />
+            <div className="w-fit relative -mt-20 ">
+              <div className="p-3  border bg-white rounded-t-lg">
+                <h1 className=" text-2xl font-bold text-fuchsia-800">
+                  Ademola Blessing
+                </h1>
+                <h2 className=" text-md  text-fuchsia-800">
+                  PANS OAU President
+                </h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
