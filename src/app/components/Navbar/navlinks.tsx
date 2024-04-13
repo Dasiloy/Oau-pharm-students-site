@@ -119,7 +119,7 @@ const route = useRouter()
                                     <li className='list-none'>
                                       <Link
                                         href={slink.link}
-                                        className={segment[1] === slink.segment ? " font-normal text-[16px] flex items-center gap-3 justify-center text-primary-500 underline underline-offset-8" :
+                                        className={segment[1] === slink.name ? " font-normal text-[16px] flex items-center gap-3 justify-center text-primary-500 underline underline-offset-8" :
                                         'font-normal text-[16px] gap-3 flex items-center justify-center text-dark-dark-100'}>
 
                                         {slink.name}
@@ -225,7 +225,7 @@ const route = useRouter()
                                       <a
                                         onClick={() => navigate(slink.link)}
                                         className={
-                                          segment[1] === slink.segment
+                                          segment[1] === slink.name
                                             ? 'text-primary-500 underline underline-offset-4'
                                             : ' text-dark-dark-100'
                                         }>
