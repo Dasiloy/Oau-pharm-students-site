@@ -86,15 +86,6 @@ but you also support the professionals that we will one day become. </p>
 </div>
 
 
-
-<div className='grid grid-cols-4 my-[2.5rem] lg:my-[5rem] gap-2  lg:gap-6'>
-  {brands.map((brand) =>(
-    <div className='flex flex-row '>
-      <Image  height={250} width={250}  src={brand.brand} alt='brands'    />
-    </div>
-  ))}
-</div>
-
     </div>
   )
 }

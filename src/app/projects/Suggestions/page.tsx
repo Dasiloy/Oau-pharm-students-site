@@ -28,13 +28,7 @@ const Suggestions = () => {
   <button className=' rounded-md lg:w-[210px] bg-white lg:h-[65px] w-fit flex items-center justify-center p-[1rem] h-[40px] cursor-pointer font-semibold text-primary-500 text-[14px] lg:text-[16px] ease-in-out duration-500 border-[1px] '>Send Message</button>
 </div>
 </div>
-<div className='grid grid-cols-4 my-[2.5rem] lg:my-[5rem] gap-2  lg:gap-6'>
-  {brands.map((brand) =>(
-    <div className='flex flex-row '>
-      <Image  height={300} width={300}  src={brand.brand} alt='brands'    />
-    </div>
-  ))}
-</div>
+
     </div>
   )
 }
