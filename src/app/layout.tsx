@@ -5,7 +5,7 @@ import React from 'react';
 import type { Metadata } from 'next';
 import { Mulish } from 'next/font/google';
 import { Providers } from './providers';
-import Navlinks from './components/Navbar/navlinks';
+import Navlinks from './components/navBar/navlinks';
 import Footer from './components/footer/footer';
 
 const inter = Mulish({ subsets: ['latin'] });
