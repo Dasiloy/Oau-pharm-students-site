@@ -24,7 +24,7 @@ function Download() {
               </div>
               <div className='flex justify-center col-span-2 p-3 md:col-span-1'>
                 <button className=' bg-fuchsia-800 rounded-lg text-white'>
-                  <h1 className='md:p-2 text-sm md:text-lg p-1'>
+                  <h1 className='md:p-2 text-sm md:text-md p-1'>
                     Get your copy now
                   </h1>
                 </button>

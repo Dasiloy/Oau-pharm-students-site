@@ -3,7 +3,7 @@ import Image from 'next/image'
 import { brands } from '@/app/articles/data'
 const Suggestions = () => {
   return (
-    <div className=' flex flex-col items-center justify-center gap-[4rem] lg:gap-[8rem]'>
+    <div className=' flex flex-col items-center justify-center gap-[3rem] lg:gap-[6rem]'>
 <div className='  flex lg:flex-row flex-col lg:w-[70%] w-[90%] gap-[1rem] items-center justify-center mt-6 '>
 <div className='flex flex-col items-center lg:items-start justify-center gap-6'>
 <h2 className='font-bold text-[20px] lg:text-[40px] text-[#ECBB55]'>Suggestion Box</h2>
