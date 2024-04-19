@@ -1,3 +1,4 @@
+
 import 'normalize.css';
 import './globals.css';
 import 'aos/dist/aos.css';
@@ -21,15 +22,21 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-    const backgroundImageStyle = {
-      backgroundImage: 'url(/WholeBackground.png)',
-      backgroundSize: 'cover',
-      backgroundPosition: 'center',
-      // Set the height you want
-    };
+  const backgroundImageStyle = {
+    backgroundImage: 'url(/WholeBackground.png)',
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+    // Set the height you want
+  };
+  /* Unhandled Runtime Error
+ChunkLoadError: Loading chunk app/layout failed.
+(missing: http://localhost:3000/_next/static/chunks/app/layout.js)*/
   return (
     <html lang='en'>
-      <body style={backgroundImageStyle} className={inter.className}>
+      <body
+        style={backgroundImageStyle}
+        className={inter.className}
+        >
         <Navlinks />
         <Providers>{children}</Providers>
         <BOOK />

@@ -1,3 +1,4 @@
+'use client'
 import React from 'react';
 import Hero from './Homepage/Hero';
 import AboutUs from './Homepage/AboutUs';

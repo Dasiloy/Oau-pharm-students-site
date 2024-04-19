@@ -143,8 +143,10 @@ const route = useRouter()
               </h1>
             </div>
             <div
-              onClick={() => { route.push('/SupportUs');setview('support')}}
-              
+              onClick={() => {
+                route.push('/SupportUs');
+                setview('support');
+              }}
               className='flex items-center gap-3 justify-center cursor-pointer'>
               <h1
                 className={
@@ -171,12 +173,13 @@ const route = useRouter()
                     view === 'home'
                       ? 'flex flex-col  text-white text-[20px] font-extrabold underline underline-offset-4'
                       : 'flex flex-col  text-white text-[20px] font-extrabold '
-                  }>
+                  }
+                  onClick={() => navigate('/')}>
                   Home
                 </h1>
               </div>
               {links.map((lin) => (
-                <div className='px-3  md:cursor-pointer group'>
+                <div className='px-3  md:cursor-pointer group' key={lin.name}>
                   <div
                     onClick={() => viewed(lin.name)}
                     className='flex flex-row  justify-between'>
@@ -186,7 +189,7 @@ const route = useRouter()
                       {lin.name}
                     </h1>
                     {lin.submenu == true ? (
-                      <span className=''>
+                      <span className='' key={lin.name}>
                         {view === lin.name ? (
                           <BiSolidUpArrow className='text-[15px]  text-white' />
                         ) : (
@@ -209,7 +212,7 @@ const route = useRouter()
                           <div className=' bg-white py-[1rem] h-full '>
                             {lin.sublinks &&
                               lin.sublinks.map((mysublinks) => (
-                                <div className='flex flex-col gap-4 lg:p-6'>
+                                <div key={mysublinks.Head} className='flex flex-col gap-4 lg:p-6'>
                                   {mysublinks.sublink.map((slink) => (
                                     <li
                                       className='list-none pl-[1rem] text-primary-500 '
@@ -245,7 +248,6 @@ const route = useRouter()
               </div>
               <div
                 onClick={() => {
-                 
                   setview('support');
                 }}
                 className='px-3  md:cursor-pointer group'>
