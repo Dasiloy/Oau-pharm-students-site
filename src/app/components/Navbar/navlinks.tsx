@@ -75,7 +75,7 @@ const route = useRouter()
               </h1>
             </div>
             {links.map((link) => (
-              <div>
+              <div key={link.name}>
                 <div className='px-3  md:cursor-pointer group'>
                   <div
                     onClick={() => viewed(link.name)}
@@ -109,9 +109,9 @@ const route = useRouter()
                           <div className='flex flex-row bg-white '>
                             {link.sublinks &&
                               link.sublinks.map((mysublinks) => (
-                                <div className='flex flex-col gap-4 p-6'>
+                                <div key={mysublinks.Head} className='flex flex-col gap-4 p-6'>
                                   {mysublinks.sublink.map((slink) => (
-                                    <li className=''>
+                                    <li key={slink.name} className=''>
                                       <Link
                                         href={slink.link}
                                         className='text-dark-dark-100 hover:text-primary-500'>
@@ -214,7 +214,7 @@ const route = useRouter()
                               lin.sublinks.map((mysublinks) => (
                                 <div key={mysublinks.Head} className='flex flex-col gap-4 lg:p-6'>
                                   {mysublinks.sublink.map((slink) => (
-                                    <li
+                                    <li key={slink.name}
                                       className='list-none pl-[1rem] text-primary-500 '
                                       onClick={() => setactive(slink.name)}>
                                       <a

@@ -1,6 +1,7 @@
 import React from "react";
 import Button from "../components/button/button";
 import Image from "next/image";
+import HeadWriter from '@/app/components/Typewritter'
 interface Aboutus {
   image: string;
   content: string;
@@ -20,9 +21,7 @@ const AboutUsComponent: React.FC<Aboutus> = ({ image, content }) => {
       </div>
       <div>
         <div>
-          <h1 className='lg:text-2xl text-xl text-orange font-bold'>
-            I why are we called pharmaco?
-          </h1>
+          <HeadWriter textLines=' why are we called pharmaco?' />
           <h1 className='text-3xl ld:text-4xl font-bold mt-3'>About Us</h1>
         </div>
         <div className='md:text-lg text-md mt-5 leading-3 md:leading-4'>

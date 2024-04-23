@@ -34,7 +34,7 @@ const Articles = () => {
         <div className=' flex flex-col items-center justify-center gap-[3rem] '>
           <div className='grid grid-cols-1 lg:grid-cols-2 items-center justify-center gap-8 '>
             {health.map((hlt) => (
-              <div className=' '>
+              <div key={hlt.authorname} className=' '>
                 <div className=' flex flex-col gap-4 shadow-lg rounded-lg lg:w-10/12 m-auto justify-center'>
                   <div className=''>
                   <Image
@@ -87,9 +87,9 @@ const Articles = () => {
         <div className=' flex flex-col items-center justify-center gap-[3rem]'>
           <div className='grid grid-cols-1 lg:grid-cols-2 items-center justify-center gap-8 '>
             {events.map((eve) => (
-              <div className=''>
+              <div key={eve.authorname} className=''>
                 <div className=' flex flex-col gap-4'>
-                  <img
+                  <Image
                     src={eve.artimg}
                     alt='coverimg'
                     className=''
@@ -101,7 +101,7 @@ const Articles = () => {
                     {eve.text}
                   </p>
                   <div className='flex flex-row  gap-2'>
-                    <img
+                    <Image
                       src={eve.author}
                       alt="author's picture"
                     />
@@ -130,7 +130,7 @@ const Articles = () => {
         <div className=' flex flex-col items-center justify-center gap-[3rem]'>
           <div className='grid grid-cols-1 lg:grid-cols-2 items-center justify-center gap-8 '>
             {special.map((spc) => (
-              <div className=''>
+              <div key={spc.authorname} className=''>
                 <div className=' flex flex-col gap-4'>
                   <Image
                     height={500}
@@ -177,7 +177,7 @@ const Articles = () => {
         <div className=' flex flex-col items-center justify-center gap-[3rem]'>
           <div className='grid lg:grid-cols-3 grid-row  items-center justify-center gap-8 '>
             {more.map((mor) => (
-              <div className=''>
+              <div key={mor.authorname} className=''>
                 <div className=' flex flex-col gap-4'>
                   <Image
                     height={500}

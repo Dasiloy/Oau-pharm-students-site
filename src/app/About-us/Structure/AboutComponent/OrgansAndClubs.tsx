@@ -47,7 +47,7 @@ function OrgansAndClubs() {
       <div className='grid gap-y-10 mt-10'>
         {AboutData.map((e)=>{
             return (
-              <div className='w-10/12 md:w-9/12 m-auto'>
+              <div key={e.id} className='w-10/12 md:w-9/12 m-auto'>
                 <HeroPageCard
                   name={e.name}
                   body={e.body}

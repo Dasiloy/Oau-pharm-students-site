@@ -17,7 +17,7 @@ function ReversePicturesLayout({ mappedImages=[], sideColumnImages }) {
         <div className=' col-span-2 grid lg:gap-y-20 gap-10 gap-y-10 grid-cols-1 lg:grid-cols-2 '>
           {mappedImages.map((item) => {
             return (
-              <div className=' grid  justify-center items-center'>
+              <div key={item.id} className=' grid  justify-center items-center'>
                 <Image
                   src={item.image}
                   key={item.id}

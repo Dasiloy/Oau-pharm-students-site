@@ -21,7 +21,7 @@ const Pansproject = () => {
 </div>
 <div className=' hidden lg:flex flex-col lg:flex-row items-center justify-center gap-[4rem]'>
   {promotions.map((promotion) => (
-    <Image src={promotion.promotion} alt='avatars' width={300} height={300} className="" />
+    <Image src={promotion.promotion} key={promotion.promotion} alt='avatars' width={300} height={300} className="" />
   ))}
 </div>
 
@@ -52,7 +52,7 @@ const Pansproject = () => {
 <div className='flex hi flex-col lg:flex-row w-[70%] p-[1.5rem] lg:p-[4rem] gap-8 items-center justify-center bg-[url("/assests/rectangle32.png")] '>
 <div className='flex flex-col lg:gap-4 gap-2  '>
   <h2 className='font-bold text-[20px] lg:text-[40px] text-white' >Tell us what you want and we will help by solving it</h2>
-  <p className='text-white text-[14px] lg:text-[18px] font-normal items-center justify-center  w-[80%]' >Do you have any quaestion to ask us? Or do you want to put to our hearing what you think we don't know? Send a message </p>
+  <p className="text-white text-[14px] lg:text-[18px] font-normal items-center justify-center  w-[80%]">Do you have any quaestion to ask us? Or do you want to put to our hearing what you think we dont know? Send a message </p>
 </div>
 <div className='flex flex-col lg:justify-center gap-4'>
   <input placeholder='Enter Your Full Name' type='text' className='border-[1px] rounded-lg text-dark-dark-75 w-full lg:w-[515px] lg:h-[65px] h-[40px] outline-none pl-2 lg:pl-4' />

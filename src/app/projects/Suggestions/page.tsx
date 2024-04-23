@@ -29,11 +29,11 @@ const Suggestions = () => {
       <div className='flex hi flex-col lg:flex-row w-[70%] p-[1.5rem] lg:p-[4rem] gap-8 lg:items-center justify-center bg-[url("/assests/rectangle32.png")] '>
         <div className='flex flex-col lg:gap-4 gap-2  '>
           <h2 className='font-bold text-[20px] lg:text-[40px] text-white'>
-            Tell us what you think we don't know
+            Tell us what you think we dont know
           </h2>
           <p className='text-white text-[14px] lg:text-[18px] font-normal items-center justify-center  w-[80%]'>
             Do you have any question to ask us? Or do you want to put to our
-            hearing what you think we don't know? Send a message{' '}
+            hearing what you think we dont know? Send a message{' '}
           </p>
         </div>
         <div className='flex flex-col lg:justify-center gap-4'>

@@ -43,6 +43,7 @@ function page() {
       <div className='grid gap-y-5 mt-20'>
         {PANSNationalData.map((item) => {
           return (
+            <div key={item.id}>
             <BodyTemplate
               key={item.id}
               image={item.image}
@@ -50,6 +51,7 @@ function page() {
               id={item.id}
               name={item.title}
             />
+            </div>
           );
         })}
       </div>
@@ -61,7 +63,7 @@ function page() {
       <div className=' lg:w-8/12 w-11/12 m-auto gap-x-10 lg:gap-y-10 gap-y-5 mt-20 grid grid-cols-1 lg:grid-cols-3'>
         {PANSNationalSecondPicturesData.map((item) => {
           return (
-            <div className=' grid justify-center'>
+            <div key={item.id} className=' grid justify-center'>
               <Image
                 src={item.image}
                 key={item.id}

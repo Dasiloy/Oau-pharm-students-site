@@ -11,7 +11,7 @@ function WhyUs() {
           <p className='text-lg mt-10 leading-4'>
             <span className='font-bold'> PANS OAU nnnn</span> greatest asset is
             its hardworking and creative members. Quite simply, when you support
-            us, you are helping to improve people's health and overall
+            us, you are helping to improve peoples health and overall
             well-being by helping in any community activities where Pharmacy
             Students may assist. Not only do you aid your society, but you also
             support the professionals that we will one day become.
